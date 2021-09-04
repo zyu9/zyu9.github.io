@@ -9,14 +9,14 @@ body
 
 header, footer
 {
-    color: #FFFBD6;
+        color: #FFFBD6;
 	text-align: center;
 }
 
 h1, h2, h3
 {
 	color: #D8EAD7;
-    font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
+        font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
 	text-align: center;
 	line-height: 10px;
 }
@@ -36,8 +36,8 @@ a:hover
 figure
 {
 	text-align: center;
-    width: 400px; 
-    height: auto; 
+        width: 400px; 
+        height: auto; 
 }
 
 figcaption
