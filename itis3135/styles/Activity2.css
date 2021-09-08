@@ -3,8 +3,25 @@
 /*styling for the table goes here*/
 body
 {
+    font-family:  cursive, Cambria, 'Malgun Gothic', math, Candara;
+	color: #D8EAD7;
+    background-color: #685056;
 	width: 750px;
 	margin: 0 auto;
+}
+
+header, footer, nav
+{
+    color: #FFFBD6;
+	text-align: center;
+}
+
+h1, h2, h3
+{
+	color: #D8EAD7;
+    font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
+	text-align: center;
+	line-height: 10px;
 }
 
 table tr:nth-child(even) {
