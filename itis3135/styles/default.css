@@ -21,6 +21,12 @@ header, footer
     font-size:15px;
 }
 
+table{
+	text-align: center;
+	border-collapse: collapse;
+	margin: 20px;
+}
+
 .input{
 	background-color: #a8a6a6;
 	color: white;
