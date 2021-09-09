@@ -9,14 +9,30 @@ body
 
 header, footer
 {
-        color: #FFFBD6;
+    color: #FFFBD6;
 	text-align: center;
+}
+
+.submit_button{
+	background:#787878;
+    color:white;
+    height:50px;
+    width:100px;
+    font-size:15px;
+}
+
+.input{
+	background-color: #787878;
+	color: white;
+	font-size:15px;
+	font-family:  cursive, Cambria, 'Malgun Gothic';
+	text-align: center; 
 }
 
 h1, h2, h3
 {
 	color: #D8EAD7;
-        font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
+    font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
 	text-align: center;
 	line-height: 10px;
 }
@@ -36,7 +52,7 @@ a:hover
 figure
 {
 	text-align: center;  
-        display: block;
+    display: block;
   	margin-left: auto;
   	margin-right: auto;
   	width: 50%;
