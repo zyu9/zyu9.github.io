@@ -22,7 +22,7 @@ header, footer
 }
 
 table{
-	text-align: center;
+	text-align: left;
 	border-collapse: collapse;
 	margin: 20px;
 }
