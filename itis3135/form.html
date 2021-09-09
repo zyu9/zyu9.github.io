@@ -25,36 +25,73 @@
 		<main>
 			<h2>Sign Up for Newsletter</h2>
 			<form action=”#” method="get" name="Newsletter">
-				<label for="fname">First name: <input type="text" placeholder="First Name" required class="input"></label><br>
+				<table>
+					<tr>
+						<label for="fname">First name: <input type="text" placeholder="First Name" required class="input"></label>
+					</tr>
 
-  				<label for="lname">Last name: <input type="text" placeholder="Last Name" required class="input"></label><br>
+					<tr>
+						<label for="lname">Last name: <input type="text" placeholder="Last Name" required class="input"></label>
+					</tr>
 
-				<label for="phoneNum">Phone Number: <input type="tel" size="15" placeholder="919-123-4567" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></label><br>
+					<tr>
+						<label for="phoneNum">Phone Number: <input type="tel" size="15" placeholder="919-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+					</tr>
 
-				<label for="email">Enter your email: <input type="email" id="email" name="email"></label><br>
+					<tr>
+						<label for="email">Enter your email: <input type="email" id="email" name="email"></label>
+					</tr>
 
-				<label>Gender</label>
-                <label> <input type="radio" value="f" name="gender"> Female</label>
-                <label> <input type="radio" value="m" name="gender"> Male</label><br>
+					<tr>
+						<td>
+							<label>Gender: </label>
+						</td>
+						<td>
+							<label> <input type="radio" value="f" name="gender"> Female</label>
+							<label> <input type="radio" value="m" name="gender"> Male</label>
+						</td>
+					</tr>
 
-				<label for="age"> Age: <input type="number" size="3" maxlength="3"></label><br><br>
+					<tr>
+						<label for="age"> Age: <input type="number" size="3" maxlength="3"></label>
+					</tr>
 
-				<p>Choose your interested area: </p>
-				<input type="checkbox" checked> Coffee
-				<input type="checkbox" > Snacks
-				<input type="checkbox" > Tea
-				<input type="checkbox" > Soft Drinks <br><br>
+					<tr>
+						<td>
+							<p>Choose your interested area: </p>
+						</td>
+						<td>
+							<label><input type="checkbox" checked> Coffee</label>
+							<label><input type="checkbox" > Snacks</label>
+							<label><input type="checkbox" > Tea </label>
+							<label><input type="checkbox" > Soft Drinks</label>
+						</td>
+					</tr>
 
-				<p>Choose frequency: </p>
-				<select>
-					<option value="0">Select frequency:</option>
-    				<option value="1">Once per week</option>
-    				<option value="2">Once per month</option>
-				</select>
+					<tr>
+						<td>
+							<p>Choose frequency: </p>
+						</td>
+						<td>
+							<select>
+								<option value="0">Select frequency:</option>
+								<option value="1">Once per week</option>
+								<option value="2">Once per month</option>
+							</select>			
+						</td>
+					</tr>
 
-				<input type="submit" value="Submit" class="submit_button">
-				<input type="reset">
-			</form>>
+					<tr>
+						<td>
+							<button type="submit" class="submit_button">Submit</button>
+						</td>
+						<td>
+							<input type="reset">
+						</td>
+					</tr>
+				</table>
+			</form>
+			
 
 		</main>
 
