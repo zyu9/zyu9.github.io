@@ -39,25 +39,20 @@ function buttonSum(){
     //alert("Total is " + total); 
     
     alert(userName + " have " + number1 + " dog(s), " + number2 + " cat(s), " 
-        + number3 + " bird(s)" + total + " pet(s)"); 
+        + number3 + " bird(s) " + total + " pet(s)"); 
 }
 
 function buttonTime(){
-    document.write("Today's UTC Date is: "); 
     var utcDate = today.getUTCDate(); 
-    document.write(utcDate.toString());  
-    document.write("<br>"); 
+    alert("Today's UTC Date is: " + utcDate); 
 
-    document.write("Today's UTC Day is: "); 
     var utcDay = today.getUTCDay(); 
-    document.write(utcDay.toString());  
-    document.write("<br>"); 
+    alert("Today's UTC Day is: " + utcDay); 
 
-    document.write("Today's Full Year is: "); 
     var year = today.getFullYear(); 
     var timeFormed = year.parseInt - 2020; 
-    document.write(year.toString());  
-    document.write("We, " + companyName + ", formed: " + timeFormed + " years!");
+    alert("Today's Full Year is: " + year); 
+    alert("We, " + companyName + ", formed: " + timeFormed + " years!");
 }
 
 function buttonUrl(){
@@ -86,12 +81,12 @@ function buttonItems(){
     subTotal = subTotal + quantity3 * birdFood;
 
     alert(userName + " want " + quantity1 + " dog food, " + quantity2 + " cat food, "
-        + quantity3 + " bird food" +  "$  "+ subTotal);  
+        + quantity3 + " bird food = " +  "$  "+ subTotal);  
 }
 
 function buttonTaxAndTotal(){
     var taxPercent = 0.1; 
     var taxAmount = subTotal * taxPercent; 
     var total = subTotal + taxAmount; 
-    alert(userName + " total is: " + total); 
+    alert(userName + " total is: $ " + total); 
 }
