@@ -2,7 +2,7 @@ document.write("<h1>Welcome to my page!</h1>");
 var userName = prompt("What's your name? "); 
 var doing = prompt("How are you doing? "); 
 var companyName = "Zealous Yoranian"; 
-var subTotal; 
+var subTotal = 0; 
 
 var today = new Date();
 document.write("Today is ");
@@ -20,7 +20,8 @@ function buttonTest(){
 }
 
 function buttonSum(){
-    var enter, total; 
+    var enter; 
+    var total=0; 
     enter = prompt("Enter the number of dogs you have: ");
     enter = parseInt(enter); 
     var number1 = enter; 
@@ -35,12 +36,10 @@ function buttonSum(){
     enter = parseInt(enter); 
     var number3 = enter; 
     total = total + number3; 
-    alert("Number 1 " + number1); 
-    alert("Enter 1" + enter); 
-    alert("Total is " + total); 
+    //alert("Total is " + total); 
     
     alert(userName + " have " + number1 + " dog(s), " + number2 + " cat(s), " 
-        + number3 + " bird(s)"+ "<br>" + total + " pet(s)"); 
+        + number3 + " bird(s)" + total + " pet(s)"); 
 }
 
 function buttonTime(){
@@ -66,14 +65,11 @@ function buttonUrl(){
 }
 
 function buttonItems(){
-    var quantity, dogFood, catFood, birdFood; 
-    dogFood = 15; 
-    catFood = 15; 
-    birdFood = 12; 
+    var quantity;
+    var dogFood = 15; 
+    var catFood = 15; 
+    var birdFood = 12; 
 
-    document.write("Our company, "+ companyName + ", has following items: "); 
-    document.write("Dog & cat food $15 per bag, bird food $12 per bag. "); 
-    document.write("<br>"); 
     quantity = prompt("How many dog food do you want? "); 
     quantity = parseInt(quantity);
     var quantity1 = quantity; 
@@ -90,7 +86,7 @@ function buttonItems(){
     subTotal = subTotal + quantity3 * birdFood;
 
     alert(userName + " want " + quantity1 + " dog food, " + quantity2 + " cat food, "
-        + quantity3 + " bird food"+ "<br>" +  "$  "+ subTotal);  
+        + quantity3 + " bird food" +  "$  "+ subTotal);  
 }
 
 function buttonTaxAndTotal(){
