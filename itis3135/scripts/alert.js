@@ -9,7 +9,7 @@ document.write("Today is ");
 document.write(today.toDateString()); 
 document.write(", and the time is: ");
 var currentTime = today.getTime(); 
-document.write(currentTime.toString()); 
+document.write(currentTime); 
 document.write("<br>"); 
 document.write("The " + companyName + " welcomes you, " + userName + " !");
 document.write("<br>"); 
@@ -70,6 +70,7 @@ function buttonItems(){
 
     document.write("Our company, "+ companyName + ", has following items: "); 
     document.write("Dog & cat food $15 per bag, bird food $12 per bag. "); 
+    document.write("<br>"); 
     quantity = prompt("How many dog food do you want? "); 
     quantity = parseInt(quantity);
     var quantity1 = quantity; 
@@ -85,8 +86,8 @@ function buttonItems(){
     var quantity3 = quantity; 
     subTotal = subTotal + quantity3 * birdFood;
 
-    document.write(userName + " want " + quantity1 + " dog food," + "<br>" + quantity2 + "cat food"+ "<br>" 
-        + quantity3 + "bird food"+ "<br>" +  "$ "+ subTotal + "<br>");  
+    document.write(userName + " want " + quantity1 + " dog food, " + quantity2 + " cat food, "
+        + quantity3 + " bird food"+ "<br>" +  "$  "+ subTotal);  
 }
 
 function buttonTaxAndTotal(){
