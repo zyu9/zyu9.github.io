@@ -8,7 +8,8 @@ var today = new Date();
 document.write("Today is ");
 document.write(today.toDateString()); 
 document.write(", and the time is: ");
-document.write(today.getTime.toDateString()); 
+var currentTime = today.getTime(); 
+document.write(currentTime.toString()); 
 document.write("<br>"); 
 document.write("The " + companyName + " welcomes you, " + userName + " !");
 document.write("<br>"); 
@@ -41,17 +42,19 @@ function buttonSum(){
 
 function buttonTime(){
     document.write("Today's UTC Date is: "); 
-    document.write(today.getUTCDate.toDateString());  
+    var utcDate = today.getUTCDate(); 
+    document.write(utcDate.toString());  
     document.write("<br>"); 
 
     document.write("Today's UTC Day is: "); 
-    document.write(today.getUTCDay.toDateString());  
+    var utcDay = today.getUTCDay(); 
+    document.write(utcDay.toString());  
     document.write("<br>"); 
 
     document.write("Today's Full Year is: "); 
-    var year = today.getFullYear; 
+    var year = today.getFullYear(); 
     var timeFormed = year.parseInt - 2020; 
-    document.write(year.toDateString());  
+    document.write(year.toString());  
     document.write("We, " + companyName + ", formed: " + timeFormed + " years!");
 }
 

@@ -35,11 +35,19 @@ table{
 	text-align: center; 
 }
 
-h1, h2, h3
+h1
 {
 	color: #D8EAD7;
     font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
 	text-align: center;
+	line-height: 10px;
+}
+
+h2, h3
+{
+	color: #D8EAD7;
+    font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
+	text-align: left;
 	line-height: 10px;
 }
 
