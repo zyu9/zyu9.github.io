@@ -6,9 +6,9 @@ var subTotal;
 
 var today = new Date();
 document.write("Today is ");
-document.write(today.toDateString); 
+document.write(today.toDateString()); 
 document.write(", and the time is: ");
-document.write(today.getTime.toDateString); 
+document.write(today.getTime.toDateString()); 
 document.write("<br>"); 
 document.write("The " + companyName + " welcomes you, " + userName + " !");
 document.write("<br>"); 
@@ -35,23 +35,23 @@ function buttonSum(){
     var number3 = enter; 
     total = total + number3; 
     
-    document.write(userName + " have " + number1 + " dog(s)," + "<br>" + number2 + "cat(s)"+ "<br>" 
-        + number3 + "bird(s)"+ "<br>" + total + "pet(s)"+ "<br>"); 
+    document.write(userName + " have " + number1 + " dog(s), " + number2 + " cat(s), " 
+        + number3 + " bird(s)"+ "<br>" + total + " pet(s)"); 
 }
 
 function buttonTime(){
     document.write("Today's UTC Date is: "); 
-    document.write(today.getUTCDate.toDateString);  
+    document.write(today.getUTCDate.toDateString());  
     document.write("<br>"); 
 
     document.write("Today's UTC Day is: "); 
-    document.write(today.getUTCDay.toDateString);  
+    document.write(today.getUTCDay.toDateString());  
     document.write("<br>"); 
 
     document.write("Today's Full Year is: "); 
     var year = today.getFullYear; 
     var timeFormed = year.parseInt - 2020; 
-    document.write(year.toDateString);  
+    document.write(year.toDateString());  
     document.write("We, " + companyName + ", formed: " + timeFormed + " years!");
 }
 
