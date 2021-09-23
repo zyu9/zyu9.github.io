@@ -36,7 +36,6 @@ function buttonSum(){
     enter = parseInt(enter); 
     var number3 = enter; 
     total = total + number3; 
-    //alert("Total is " + total); 
     
     alert(userName + " have " + number1 + " dog(s), " + number2 + " cat(s), " 
         + number3 + " bird(s) " + total + " pet(s)"); 
