@@ -35,8 +35,11 @@ function buttonSum(){
     enter = parseInt(enter); 
     var number3 = enter; 
     total = total + number3; 
+    alert("Number 1 " + number1); 
+    alert("Enter 1" + enter); 
+    alert("Total is " + total); 
     
-    document.write(userName + " have " + number1 + " dog(s), " + number2 + " cat(s), " 
+    alert(userName + " have " + number1 + " dog(s), " + number2 + " cat(s), " 
         + number3 + " bird(s)"+ "<br>" + total + " pet(s)"); 
 }
 
@@ -86,7 +89,7 @@ function buttonItems(){
     var quantity3 = quantity; 
     subTotal = subTotal + quantity3 * birdFood;
 
-    document.write(userName + " want " + quantity1 + " dog food, " + quantity2 + " cat food, "
+    alert(userName + " want " + quantity1 + " dog food, " + quantity2 + " cat food, "
         + quantity3 + " bird food"+ "<br>" +  "$  "+ subTotal);  
 }
 
@@ -94,5 +97,5 @@ function buttonTaxAndTotal(){
     var taxPercent = 0.1; 
     var taxAmount = subTotal * taxPercent; 
     var total = subTotal + taxAmount; 
-    document.write(userName + " total is: " + total); 
+    alert(userName + " total is: " + total); 
 }
