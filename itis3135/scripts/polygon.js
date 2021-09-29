@@ -1,26 +1,33 @@
 //Show mascot
 var shapeSides = prompt("Please enter a variable for Zealous Yoranian: ");
-while(isNaN(shapeSides)){
+while(isNaN(shapeSides) || shapeSides > 10){
     shapeSides = prompt("Please enter a valid number: "); 
 }
 
 if(shapeSides%1 === 0){
+    //The entry is integer
     var intEntry = parseInt(shapeSides); 
+
+    //If negative, use absolute value
     if(intEntry < 0){
         intEntry = Math.abs(intEntry); 
-    }else if(intEntry ){
-
     }
+    alert("intEntry" + intEntry); 
 }else{
-    if(shapeSides < 0){
-
-    }
+    //The entry is decimal
     var decEntry = parseFloat(shapeSides); 
+
+    //If negative, use absolute value
+    if(shapeSides < 0){
+        decEntry = Math.abs(decEntry); 
+    }
+    
+    //Round decimal entry to nearest integer
     decEntry = Math.round(decEntry); 
     alert("decEntry" + decEntry); 
 }
 
-alert("Shapessides: " + shapeSides); 
+//alert("Shapessides: " + shapeSides); 
 
 
 //var result = validEntry(shapeSides); 
