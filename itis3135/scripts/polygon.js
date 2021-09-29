@@ -35,7 +35,7 @@ alert("Your shape's number of sides:   " + numberOfSides + "  Shape:  " + nameOf
 //Functioons
 function validEntry(entry){
     var valid = false; 
-    if(isNaN(entry) || entry > 10){
+    if(isNaN(entry) || entry > 10 || entry > -10){
         valid = true; 
     }
     return valid; 
