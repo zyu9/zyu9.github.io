@@ -13,7 +13,7 @@ function getShape(sides){
         case 9: shapeName = "Nonagon"; break; 
         case 10: shapeName = "Decagon"; break; 
     }
-    
+    alert("shapeName in get shape" + shapeName); 
     return shapeName; 
 }
 
@@ -30,7 +30,7 @@ function validEntry(entry){
         var number = parseFloat(entry); 
         s = Math.round(number); 
     }
-    
+    alert("s in valid entry" + s); 
     return {valid, s}; 
 }
 
@@ -42,6 +42,6 @@ let valid = result.valid, s = result.s;
 while(valid === false){
     shapeSides = prompt("Please enter a valid number: "); 
 }
-
+alert("Shape" + shape);
 var shape = getShape(shapeSides); 
 alert("Your shape is: " + shape + " with " + shapeSides + " number of sides");
