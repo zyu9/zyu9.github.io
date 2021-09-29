@@ -1,4 +1,40 @@
-function getShape(sides){
+//Show mascot
+var shapeSides = prompt("Please enter a variable for Zealous Yoranian: ");
+while(!isNaN(shapeSides)){
+    shapeSides = prompt("Please enter a valid number: "); 
+}
+
+if(shapeSides%1 === 0){
+    var intEntry = parseInt(shapeSides); 
+    if(intEntry < 0){
+        intEntry = Math.abs(intEntry); 
+    }else if(intEntry ){
+
+    }
+}else{
+    if(shapeSides < 0){
+
+    }
+    var decEntry = parseFloat(shapeSides); 
+    decEntry = Math.round(decEntry); 
+    alert("decEntry" + decEntry); 
+}
+
+alert("Shapessides: " + shapeSides); 
+
+
+//var result = validEntry(shapeSides); 
+//var valid = result.valid, s = result.s;
+
+//while(valid === false){
+//    shapeSides = prompt("Please enter a valid number: "); 
+//}
+//alert("Shape" + shape);
+//var shape = getShape(shapeSides); 
+//alert("Your shape is: " + shape + " with " + s + " number of sides");
+
+/**
+//function getShape(sides){
     var shapeName = ""; 
     switch (sides){
         case 0: shapeName = "No shape"; break; 
@@ -15,9 +51,9 @@ function getShape(sides){
     }
     alert("shapeName in get shape" + shapeName); 
     return shapeName; 
-}
+//}
 
-function validEntry(entry){
+//function validEntry(entry){
     var valid = true; 
     //Get absolute value for the entry number
     var s = Math.abs(entry); 
@@ -32,16 +68,5 @@ function validEntry(entry){
     }
     alert("s in valid entry" + s); 
     return {valid, s}; 
-}
-
-//Show mascot
-var shapeSides = prompt("Please enter a variable for Zealous Yoranian: ");
-var result = validEntry(shapeSides); 
-var valid = result.valid, s = result.s;
-
-while(valid === false){
-    shapeSides = prompt("Please enter a valid number: "); 
-}
-alert("Shape" + shape);
-var shape = getShape(shapeSides); 
-alert("Your shape is: " + shape + " with " + shapeSides + " number of sides");
+//}
+**/
