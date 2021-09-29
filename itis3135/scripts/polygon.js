@@ -36,8 +36,8 @@ function validEntry(entry){
 
 //Show mascot
 var shapeSides = prompt("Please enter a variable for Zealous Yoranian: ");
-let result = validEntry(shapeSides); 
-let valid = result.valid, s = result.s;
+var result = validEntry(shapeSides); 
+var valid = result.valid, s = result.s;
 
 while(valid === false){
     shapeSides = prompt("Please enter a valid number: "); 
