@@ -1,6 +1,6 @@
 //Show mascot
 var shapeSides = prompt("Please enter a variable for Zealous Yoranian: ");
-while(!isNaN(shapeSides)){
+while(isNaN(shapeSides)){
     shapeSides = prompt("Please enter a valid number: "); 
 }
 
