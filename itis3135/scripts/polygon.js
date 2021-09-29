@@ -4,6 +4,8 @@ while(isNaN(shapeSides) || shapeSides > 10){
     shapeSides = prompt("Please enter a valid number: "); 
 }
 
+var shapeName = ""; 
+
 if(shapeSides%1 === 0){
     //The entry is integer
     var intEntry = parseInt(shapeSides); 
@@ -27,7 +29,31 @@ if(shapeSides%1 === 0){
     alert("decEntry" + decEntry); 
 }
 
-//alert("Shapessides: " + shapeSides); 
+if(intEntry == 0 || decEntry == 0){
+    shapeName = "No shape";
+}else if(intEntry == 1 || decEntry == 1){
+    shapeName = "Monogon";
+}else if(intEntry == 2 || decEntry == 2){
+    shapeName = "Bigon";
+}else if(intEntry == 3 || decEntry == 3){
+    shapeName = "Trigon";
+}else if(intEntry == 4 || decEntry == 4){
+    shapeName = "Tetragon";
+}else if(intEntry == 5 || decEntry == 5){
+    shapeName = "Pentagon";
+}else if(intEntry == 6 || decEntry == 6){
+    shapeName = "Hexagon";
+}else if(intEntry == 7 || decEntry == 7){
+    shapeName = "Septagon";
+}else if(intEntry == 8 || decEntry == 8){
+    shapeName = "Octagon";
+}else if(intEntry == 9 || decEntry == 9){
+    shapeName = "Nonagon"; 
+}else if(intEntry == 10 || decEntry == 10){
+    shapeName = "Decagon";
+}
+//alert("shapeName in get shape" + shapeName); 
+alert("Shapessides: " + shapeSides + "Shapes: " + shapeName); 
 
 
 //var result = validEntry(shapeSides); 
