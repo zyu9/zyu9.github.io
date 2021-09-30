@@ -37,6 +37,8 @@ function buttonPower(x, y){
 var number1 = prompt("Enter first number: "); 
 var number2 = prompt("\nEnter second number: "); 
 
+alert("number1"+ number1); 
+
 document.getElementById("btnAdd").addEventListener("click", buttonAddition(number1, number2));
 document.getElementById("btnSub").addEventListener("click", buttonSubtraction(number1, number2));
 document.getElementById("btnMul").addEventListener("click", buttonMultiplication(number1, number2)); 
