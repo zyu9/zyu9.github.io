@@ -36,7 +36,7 @@ function buttonPower(x, y){
 
 var number1 = prompt("Enter first number: "); 
 var number2 = prompt("\nEnter second number: "); 
-var result = number1 + number2; 
+var result = parseInt(number1) + parseInt(number2); 
 
 alert("Sum: " + result); 
 
