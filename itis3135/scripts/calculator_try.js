@@ -1,29 +1,29 @@
 function buttonAddition(x, y){
-    var result = x + y; 
+    var result = parseInt(x) + parseInt(y); 
     alert("The sum is: " + result); 
     //return result; 
 }
 
 function buttonSubtraction(x, y){
-    var result = x - y; 
+    var result = parseInt(x) - parseInt(y); 
     alert("The result is: " + result); 
     //return result; 
 }
 
 function buttonMultiplication(x, y){
-    var result = x * y; 
+    var result = parseInt(x) * parseInt(y); ; 
     alert("The result is: " + result); 
     //return result; 
 }
 
 function buttonDivision(x, y){
-    var result = x / y; 
+    var result = parseInt(x) / parseInt(y); 
     alert("The result is: " + result); 
     //return result; 
 }
 
 function buttonModulus(x, y){
-    var result = x % y; 
+    var result = parseInt(x) % parseInt(y); 
     alert("The result is: " + result); 
     //return result; 
 }
@@ -36,9 +36,6 @@ function buttonPower(x, y){
 
 var number1 = prompt("Enter first number: "); 
 var number2 = prompt("\nEnter second number: "); 
-var result = parseInt(number1) + parseInt(number2); 
-
-alert("Sum: " + result); 
 
 document.getElementById("btnAdd").addEventListener("click", buttonAddition(number1, number2));
 document.getElementById("btnSub").addEventListener("click", buttonSubtraction(number1, number2));
