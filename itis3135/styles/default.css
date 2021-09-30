@@ -21,6 +21,14 @@ header, footer
     font-size:15px;
 }
 
+button{
+	background:#352f2f;
+    color:white;
+    height:50px;
+    width:100px;
+    font-size:15px;
+}
+
 table{
 	text-align: left;
 	border-collapse: collapse;
