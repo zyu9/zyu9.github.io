@@ -12,9 +12,6 @@ header, footer
     color: #FFFBD6;
 	text-align: center;
 }
-.calculator__keys{
-	display : grid; 
-}
 
 .submit_button{
 	background:#787878;
@@ -93,5 +90,12 @@ figcaption
 nav
 {
 	text-align: center;
+}
+
+.calculator__keys{
+	background-color: #999;
+  	display: grid;
+  	grid-gap: 1px;
+  	grid-template-columns: repeat(4, 1fr);
 }
   
