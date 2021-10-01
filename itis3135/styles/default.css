@@ -12,6 +12,9 @@ header, footer
     color: #FFFBD6;
 	text-align: center;
 }
+.calculator__keys{
+	display : grid; 
+}
 
 .submit_button{
 	background:#787878;
