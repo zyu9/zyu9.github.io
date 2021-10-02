@@ -173,7 +173,7 @@ button:focus
 }
 
 .key--operator {
-	background-color: rgb(199, 199, 199);
+	background-image: linear-gradient(to bottom, #d3d2d2,rgb(199, 199, 199));
 }
   
 .key--equal {
