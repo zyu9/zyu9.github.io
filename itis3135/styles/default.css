@@ -98,11 +98,11 @@ nav
 
 .calculator {
 	border-radius: 8px;
-	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2em;
-	max-width: 10em;
+	max-width: 20em;
 	overflow: hidden;
 }
 
