@@ -119,4 +119,15 @@ nav
   top: 0;
   z-index: 1;
 }
+
+.key--operator {
+	background-color: #eee;
+}
+  
+.key--equal {
+	background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+	grid-column: -2;
+	grid-row: 2 / span 4;
+}
+  
   
