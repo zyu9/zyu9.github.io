@@ -1,7 +1,6 @@
 const calculator = document.querySelector('.calculator');
-alert("this script doen't run"); 
 const keys = calculator.querySelector('.calculator__keys');
-
+alert("this script doen't run"); 
 const display = document.querySelector('.calculator__display');
 
 alert("calculator" + calculator);
