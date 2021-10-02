@@ -152,7 +152,7 @@ button:focus
 }
   
 .calculator__keys > * {
-	background-color: rgb(253, 183, 183);
+	background-image: linear-gradient(to bottom, rgb(63, 52, 52), rgb(65, 54, 54));
 	padding: 0.5em 1.25em;
 	position: relative;
 	text-align: center;
