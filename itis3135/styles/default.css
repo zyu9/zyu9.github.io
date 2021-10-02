@@ -1,7 +1,7 @@
 body
 {
 	font-family:  cursive, Cambria, 'Malgun Gothic', math, Candara;
-	color: #D8EAD7;
+	color: #c9c9c9;
 	background-color: #685056;
 	margin-left: 75px;
 	margin-right: 75px;
@@ -91,6 +91,17 @@ nav
 {
 	text-align: center;
 }
+
+.calculator {
+	border-radius: 12px;
+	box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	max-width: 15em;
+	overflow: hidden;
+}
+  
 
 .calculator__keys{
 	background-color: #999;
