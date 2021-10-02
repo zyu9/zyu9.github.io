@@ -40,7 +40,7 @@ keys.addEventListener('click', e => {
               } else {
                 display.textContent = displayedNum + keyContent;
               }
-              calculator.dataset.previousKeyType = 'number'
+              calculator.dataset.previousKeyType = 'number'; 
         }
 
         if(
