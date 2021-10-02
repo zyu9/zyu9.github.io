@@ -116,14 +116,14 @@ nav
   
 
 .calculator__keys{
-	background-color: rgb(117, 115, 115);
+	background-color: rgb(65, 54, 54);
   	display: grid;
-  	grid-gap: 0.5px;
+  	grid-gap: 0.75px;
   	grid-template-columns: repeat(4, 1fr);
 }
   
 .calculator__keys > * {
-	background-color: rgb(107, 105, 105);
+	background-color: rgb(65, 54, 54);
 	padding: 0.5em 1.25em;
 	position: relative;
 	text-align: center;
@@ -144,7 +144,7 @@ nav
 }
 
 .key--operator {
-	background-color: rgb(194, 193, 193);
+	background-color: rgb(199, 199, 199);
 }
   
 .key--equal {
