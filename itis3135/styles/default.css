@@ -21,7 +21,7 @@ header, footer
     font-size:15px;
 }
 
-button{
+.try_calculator{
 	background:#352f2f;
     color:white;
     height:50px;
