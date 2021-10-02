@@ -101,6 +101,14 @@ nav
 	max-width: 15em;
 	overflow: hidden;
 }
+
+.calculator__display {
+	background-color: #222222;
+	color: #fff;
+	font-size: 1.714285714em;
+	padding: 0.5em 0.75em;
+	text-align: right;
+}
   
 
 .calculator__keys{
