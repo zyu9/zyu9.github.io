@@ -48,6 +48,7 @@ keys.addEventListener('click', e => {
             action === 'add' || action === 'subtract' ||
             action === 'multiply' || action === 'divide'
         ){
+            alert('operator key!'); 
             //console.log('operator key!');
             const firstValue = calculator.dataset.firstValue; 
             const operator = calculator.dataset.operator; 
@@ -71,6 +72,7 @@ keys.addEventListener('click', e => {
         }
 
         if(action === 'decimal'){
+            alert('decimal key!'); 
             //console.log('decimal key!');
             if (!displayedNum.includes('.')) {
                 display.textContent = displayedNum + '.'; 
