@@ -92,6 +92,11 @@ nav
 	text-align: center;
 }
 
+html {
+	box-sizing: border-box;
+  }
+  
+
 input:hover,
 input:active,
 input:focus,
