@@ -3,6 +3,8 @@ const keys = calculator.querySelector('.calculator__keys');
 
 const display = document.querySelector('.calculator__display');
 
+alert("calculator" + calculator);
+
 const calculate = (n1, operator, n2) => {
     let result = '';
     if (operator === 'add') {
@@ -48,7 +50,7 @@ keys.addEventListener('click', e => {
             action === 'add' || action === 'subtract' ||
             action === 'multiply' || action === 'divide'
         ){
-            alert('operator key!'); 
+            //alert('operator key!'); 
             //console.log('operator key!');
             const firstValue = calculator.dataset.firstValue; 
             const operator = calculator.dataset.operator; 
@@ -72,7 +74,7 @@ keys.addEventListener('click', e => {
         }
 
         if(action === 'decimal'){
-            alert('decimal key!'); 
+            //alert('decimal key!'); 
             //console.log('decimal key!');
             if (!displayedNum.includes('.')) {
                 display.textContent = displayedNum + '.'; 
