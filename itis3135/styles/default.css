@@ -92,19 +92,11 @@ nav
 	text-align: center;
 }
 
-input,
-textarea,
 button 
 {
   border: 0;
   border-radius: 0;
   background-color: transparent;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  outline: none;
-  appearance: none;
-  text-align: left;
 }
 
 html 
