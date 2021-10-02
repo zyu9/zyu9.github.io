@@ -35,6 +35,42 @@ table{
 	margin: 20px;
 }
 
+table tr:nth-child(even) {
+	background-color: rgb(146, 146, 146);
+	color: #fff; 
+}
+
+table
+{
+	border-collapse: collapse;
+	
+	margin: 20px;
+}
+
+thead
+{
+	background-color: rgb(233, 59, 74);
+}
+
+th, td
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.right
+{
+	text-align: right;
+}
+
+tbody tr:nth-child(odd) td
+{
+	background-color: rgb(250, 145, 215);
+}
+
+
 .input{
 	background-color: #a8a6a6;
 	color: white;
