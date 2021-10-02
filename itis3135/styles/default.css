@@ -1,7 +1,7 @@
 body
 {
 	font-family:  cursive, Cambria, 'Malgun Gothic', math, Candara;
-	color: #868585;
+	color: #c0c0c0;
 	background-color: #685056;
 	margin-left: 75px;
 	margin-right: 75px;
@@ -93,7 +93,7 @@ nav
 }
 
 .container {
-	max-width: 50em;
+	max-width: 40em;
 }
 
 .calculator {
@@ -109,21 +109,21 @@ nav
 .calculator__display {
 	background-color: #222222;
 	color: #fff;
-	font-size: 1.714285714em;
+	font-size: 2em;
 	padding: 0.5em 0.75em;
 	text-align: right;
 }
   
 
 .calculator__keys{
-	background-color: #999;
+	background-color: rgb(117, 115, 115);
   	display: grid;
-  	grid-gap: 1px;
+  	grid-gap: 0.5px;
   	grid-template-columns: repeat(4, 1fr);
 }
   
 .calculator__keys > * {
-	background-color: #fff;
+	background-color: rgb(107, 105, 105);
 	padding: 0.5em 1.25em;
 	position: relative;
 	text-align: center;
@@ -144,7 +144,7 @@ nav
 }
 
 .key--operator {
-	background-color: #eee;
+	background-color: rgb(194, 193, 193);
 }
   
 .key--equal {
