@@ -4,6 +4,7 @@ const keys = calculator.querySelector('.calculator__keys');
 const display = document.querySelector('.calculator__display');
 
 alert("calculator" + calculator);
+alert("this script doen't run"); 
 
 const calculate = (n1, operator, n2) => {
     let result = '';
