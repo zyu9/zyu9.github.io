@@ -2,10 +2,6 @@ const calculator = document.querySelector('.calculator');
 const keys = document.querySelector('.calculator__keys');
 const display = document.querySelector('.calculator__display');
 
-//alert("calculator" + calculator);
-alert("keys" + keys);
-alert("display" + display);
-
 const calculate = (n1, operator, n2) => {
     let result = '';
     if (operator === 'add') {
