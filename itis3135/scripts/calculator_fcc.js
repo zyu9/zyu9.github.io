@@ -1,12 +1,8 @@
-window.onload = (event) => {
-    console.log('The page has fully loaded');
-};
-
 const calculator = document.querySelector('.calculator');
 const keys = document.querySelector('.calculator__keys');
 const display = document.querySelector('.calculator__display');
 
-const calculate = (n1, operator, n2) => {
+window.onload = function calculate (n1, operator, n2){
     let result = '';
     if (operator === 'add') {
       result = parseFloat(n1) + parseFloat(n2); 
