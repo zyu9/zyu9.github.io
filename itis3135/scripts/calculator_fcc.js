@@ -1,6 +1,5 @@
-alert("this script doen't run"); 
-
 const calculator = document.querySelector('.calculator');
+alert("this script doen't run"); 
 const keys = calculator.querySelector('.calculator__keys');
 
 const display = document.querySelector('.calculator__display');
