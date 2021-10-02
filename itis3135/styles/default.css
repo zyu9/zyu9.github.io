@@ -40,13 +40,6 @@ table tr:nth-child(even) {
 	color: #fff; 
 }
 
-table
-{
-	border-collapse: collapse;
-	
-	margin: 20px;
-}
-
 thead
 {
 	background-color: rgb(233, 59, 74);
