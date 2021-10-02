@@ -152,7 +152,7 @@ button:focus
 }
   
 .calculator__keys > * {
-	background-image: linear-gradient(to bottom, rgb(63, 52, 52), rgb(65, 54, 54));
+	background-image: linear-gradient(to bottom, rgb(247, 120, 120), rgb(172, 55, 55));
 	padding: 0.5em 1.25em;
 	position: relative;
 	text-align: center;
@@ -173,7 +173,7 @@ button:focus
 }
 
 .key--operator {
-	background-image: linear-gradient(to bottom, #d3d2d2,rgb(199, 199, 199));
+	background-image: linear-gradient(to bottom, #dbd8d8,rgb(199, 199, 199));
 }
   
 .key--equal {
