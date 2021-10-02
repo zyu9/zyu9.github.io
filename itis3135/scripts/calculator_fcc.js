@@ -1,3 +1,7 @@
+window.onload = (event) => {
+    console.log('The page has fully loaded');
+};
+
 const calculator = document.querySelector('.calculator');
 const keys = document.querySelector('.calculator__keys');
 const display = document.querySelector('.calculator__display');
