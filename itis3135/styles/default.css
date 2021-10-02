@@ -92,9 +92,25 @@ nav
 	text-align: center;
 }
 
-html {
+input,
+textarea,
+button 
+{
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  appearance: none;
+  text-align: left;
+}
+
+html 
+{
 	box-sizing: border-box;
-  }
+}
   
 
 input:hover,
@@ -105,15 +121,18 @@ textarea:active,
 textarea:focus,
 button:hover,
 button:active,
-button:focus {
+button:focus 
+{
   outline: none;
 }
 
-.container {
+.container 
+{
 	max-width: 40em;
 }
 
-.calculator {
+.calculator 
+{
 	border-radius: 8px;
 	box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
 	margin-left: auto;
@@ -123,7 +142,8 @@ button:focus {
 	overflow: hidden;
 }
 
-.calculator__display {
+.calculator__display 
+{
 	background-color: #222222;
 	color: #fff;
 	font-size: 2em;
