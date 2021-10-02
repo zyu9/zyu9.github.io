@@ -103,7 +103,12 @@ html
 {
 	box-sizing: border-box;
 }
-  
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 input:hover,
 input:active,
