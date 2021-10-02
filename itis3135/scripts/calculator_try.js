@@ -38,9 +38,10 @@ var number1 = prompt("Enter first number: ");
 var number2 = prompt("\nEnter second number: "); 
 
 document.getElementById("btnAdd").addEventListener("click", function(number1, number2){
-    var result = parseInt(x) + parseInt(y); 
+    var result = parseInt(number1) + parseInt(number2); 
     alert("The sum is: " + result); 
 });
+
 document.getElementById("btnSub").addEventListener("click", buttonSubtraction(number1, number2));
 document.getElementById("btnMul").addEventListener("click", buttonMultiplication(number1, number2)); 
 document.getElementById("btnDivid").addEventListener("click", buttonDivision(number1, number2)); 
