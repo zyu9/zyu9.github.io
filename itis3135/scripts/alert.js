@@ -1,4 +1,4 @@
-document.write("<h1>Welcome to my page!</h1>"); 
+document.write("<p>Welcome to my page!</p>"); 
 var userName = prompt("What's your name? "); 
 var doing = prompt("How are you doing? "); 
 var companyName = "Zealous Yoranian"; 
