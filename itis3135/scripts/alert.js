@@ -2,6 +2,7 @@ document.write("<p>Welcome to my page!</p>");
 var userName = prompt("What's your name? "); 
 var doing = prompt("How are you doing? "); 
 var companyName = "Zealous Yoranian"; 
+var tagline = "It's " + companyName + "'s time!"; 
 var subTotal = 0; 
 
 var today = new Date();
@@ -12,6 +13,8 @@ var currentTime = today.getTime();
 document.write(currentTime); 
 document.write("<br>"); 
 document.write("The " + companyName + " welcomes you, " + userName + " !");
+document.write("<br>"); 
+document.write(tagline); 
 document.write("<br>"); 
 document.write("We glad you are doing " + doing + " !"); 
 
