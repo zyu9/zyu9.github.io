@@ -66,6 +66,16 @@ tbody tr:nth-child(even) td
 	color: #fff; 
 }
 
+tbody tr:nth-child(odd) th{
+	background-color: rgb(101, 193, 255);
+	color: #fff; 
+}
+
+tbody tr:nth-child(even) th{
+	background-color: rgb(140, 255, 150);
+	color: #fff; 
+}
+
 .input{
 	background-color: #a8a6a6;
 	color: white;
