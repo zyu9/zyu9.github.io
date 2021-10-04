@@ -35,7 +35,7 @@ table{
 	margin: 20px;
 }
 
-thead tr:nth-child(odd) th
+thead
 {
 	background-color: rgb(233, 59, 74);
 	color:rgba(0, 0, 0); 
