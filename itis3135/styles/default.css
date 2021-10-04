@@ -35,7 +35,7 @@ table{
 	margin: 20px;
 }
 
-table tr:nth-child(even) {
+tbody tr:nth-child(even) td {
 	background-color: rgb(146, 146, 146);
 	color: #fff; 
 }
