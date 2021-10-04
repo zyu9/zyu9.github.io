@@ -35,14 +35,10 @@ table{
 	margin: 20px;
 }
 
-tbody tr:nth-child(even) td {
-	background-color: rgb(146, 146, 146);
-	color: #fff; 
-}
-
-thead
+thead tr:nth-child(odd) th
 {
 	background-color: rgb(233, 59, 74);
+	color:rgba(0, 0, 0, 0.15); 
 }
 
 th, td
@@ -61,6 +57,19 @@ th, td
 tbody tr:nth-child(odd) td
 {
 	background-color: rgb(250, 145, 215);
+	color:rgba(0, 0, 0, 0.15); 
+}
+
+tbody tr:nth-child(even) td 
+{
+	background-color: rgb(146, 146, 146);
+	color: #fff; 
+}
+
+table tr:nth-child(even) th
+{
+	background-color: rgb(60, 206, 216);
+	color: #fff; 
 }
 
 
