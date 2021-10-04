@@ -38,7 +38,7 @@ table{
 thead
 {
 	background-color: rgb(233, 59, 74);
-	color:rgb(0, 0, 0); 
+	color:rgb(255, 255, 255); 
 }
 
 th, td
@@ -66,13 +66,8 @@ tbody tr:nth-child(even) td
 	color: #fff; 
 }
 
-tbody tr:nth-child(odd) th{
+tbody tr th{
 	background-color: rgb(101, 193, 255);
-	color: #fff; 
-}
-
-tbody tr:nth-child(even) th{
-	background-color: rgb(140, 255, 150);
 	color: #fff; 
 }
 
