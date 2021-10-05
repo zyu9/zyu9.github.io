@@ -70,3 +70,5 @@ window.onload = function(){
     document.getElementById('displayResults').onclick = displayResults; 
     document.getElementById('displaySalary').onclick = displaySalary; 
 }
+
+alert("Persons: " + persons);
