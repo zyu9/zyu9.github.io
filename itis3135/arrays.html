@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="styles/default.css">
-        <script src="scripts/calculator_fcc.js" defer></script>
-        <title>Tutorial Calculator</title>
+        <script src="scripts/arrays.js" defer></script>
+        <title>Arrays</title>
     </head>
+
     <body>
         <header>
             <h1>Zhiyan Yu || ITIS 3135</h1>
@@ -20,37 +21,35 @@
             <a href="first-scripts.html">First Scripts</a> ||
             <a href="name_the_polygon.html">Name the Polygon</a> ||
             <a href="calculator_try.html">Try to Make a Calculator</a> ||
-            <a href="calculator_fcc.html">Tutorial Calculator</a>
+            <a href="calculator_fcc.html">Tutorial Calculator</a> ||
+            <a href="arrays.html">Arrays</a>
         </nav>
 
         <main>
-            <div class="container">
-                <h2>Tutorial Calculator</h2>
-                <div class="calculator">
-                    <div class="calculator__display">0</div>
-                    <div class="calculator__keys">
-                        <button class="key--operator" data-action="add">+</button>
-                        <button class="key--operator" data-action="subtract">-</button>
-                        <button class="key--operator" data-action="multiply">&times;</button>
-                        <button class="key--operator" data-action="divide">÷</button>
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>0</button>
-                        <button data-action="decimal">.</button>
-                        <button data-action="clear">AC</button>
-                        <button class="key--equal" data-action="calculate">=</button>
-                    </div>
-                </div>
-            </div> 
-        </main>
+            <h2>Arrays</h2>
+            <form>
+                <label for="employees">Choose an Employee:</label>
+                <select name="employees" id="employees">
+                    <option value="Tom Washington">Tom Washington</option>
+                    <option value="Alice Woods">Alice Woods</option>
+                    <option value="Peter Fisher">Peter Fisher</option>
+                </select>
+                <br><br>
+                <input type="button" value="addSalary" id="addSalary">Add Salary</input>
+                <br>
+                <input type="button" value="displayResults" id="displayResults" >Display Results</input>
+                <br>
+                <input type="button" value="displaySalary" id="displaySalary">Display Salary</input>
+            </form>
 
+            <div class="results">
+                <p id="average"></p>
+                <p id="highest"></p>
+                
+                <table class="results_table">
+                </table>
+            </div>
+        </main>
         <footer>
             <br/>
             <nav>
@@ -65,7 +64,8 @@
                 <a href="https://zyu9.github.io/itis3135/first-scripts.html" target="_blank">First Scripts</a> |
 				<a href="https://zyu9.github.io/itis3135/name_the_polygon.html" target="_blank">Name the Polygon</a> |
                 <a href="https://zyu9.github.io/itis3135/calculator_try.html" target="_blank">Try to Make a Calculator</a> |
-                <a href="https://zyu9.github.io/itis3135/calculator_fcc.html" target="_blank">Tutorial Calculator</a>
+                <a href="https://zyu9.github.io/itis3135/calculator_fcc.html" target="_blank">Tutorial Calculator</a> |
+                <a href="https://zyu9.github.io/itis3135/arrays.html" target="_blank">Arrays</a>
             </nav>
             <br/>
 
@@ -74,14 +74,13 @@
             <a href="https://webpages.uncc.edu/zyu9/itis3135/index.html" target="_blank">Memu/Index</a> 
             <br/>
 
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fzyu9%2Fitis3135%2Fcalculator_fcc.html">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fzyu9%2Fitis3135%2Farrays.html">
                 <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
             </a>
     
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fzyu9%2Fitis3135%2Fcalculator_fcc.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fzyu9%2Fitis3135%2Farrays.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
                 <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
             </a>
-
         </footer>
     </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="ch6.js"></script>
+        <title>Join Email List</title>
+    </head>
+    <body>
+        <main>
+            <h1>Register for an Account</h1>
+            <form action="ch6.html" method="GET" name="registration_form" id="registration_form">
+                <label for="email_address">Email: <label>
+                    <input type="text" id="email_address" name="email_address">
+                    <span>*</span><br>
+                <label for="phone">Phone: </label>
+                    <input type="text" name="phone" id="phone">
+                    <span>*</span><br>
+                <label for="country">Country: </label>
+                    <select name="country" id="country">
+                        <option value="">Please select a country</option>
+                        <option>USA</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                    </select>
+                    <span>*</span><br>
+                    <label>Contact me by:</label>
+                        <input type="radio" name="contact" id="text"value="text" checked>Text
+                        <input type="radio" name="contact" id="email"value="email">Email
+                        <input type="radio" name="contact" id="none"value="none">Don't contact me<br>
+                    <label>Terms of Service:</label>
+                        <input type="checkbox" name="terms" id="terms"value="yes">I accept
+                        <span>*</span><br>
+                    <input type="button" id="register" value="Register">
+                    <input type="button" id="reset_form" value="Reset"><br>
+            </form>
+        </main>
+    </body>
+</html>
