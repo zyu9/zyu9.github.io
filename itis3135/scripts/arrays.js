@@ -44,7 +44,7 @@ function displayResults(){
 }
 
 function displaySalary(){
-    alert("displaySalary" + salaries);
+    alert("displaySalary" + persons.length);
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
