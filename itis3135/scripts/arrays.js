@@ -10,14 +10,13 @@ function addSalary(){
         salary = prompt("Please enter a valid number: "); 
     }
     salaries.push(salary); 
-    alert("Add Salary :" + persons); 
 }
 
 function displayResults(){
     alert("displayResults" + persons);
     //add h2 title for average salary
-    var results = document.getElementById("results"); 
-    var title1 = document.createElement('h2'); 
+    var results = $("results"); 
+    var title1 = $('h2'); 
     title1.textContent = "The average salary is: ";
     results.appendChild(title1); 
     //results.insertBefore(title1, document.getElementById("average")); 
@@ -30,17 +29,17 @@ function displayResults(){
     var average = sum/salaries.length; 
 
     alert("displayResults: average " + average);
-    document.getElementById("average").innerHTML = average; 
+    $("average").innerHTML = average; 
 
     //add h2 title for highest salary
     var title2 = document.createElement('h2'); 
     title2.textContent = "The hightest salary is: ";
-    results.insertBefore(title2, document.getElementById("highest")); 
+    results.insertBefore(title2, $("highest")); 
 
     //find the highest salary & display to <p>
     salaries.sort(function(a,b){return a - b}); 
     var highest = salaries[salaries.length-1];
-    document.getElementById("highest").innerHTML = highest; 
+    $("highest").innerHTML = highest; 
     alert("displayResults: highest " + highest);
 }
 
@@ -49,14 +48,15 @@ function displaySalary(){
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
+            alert("displaySalary: array"); 
             var table = $('results_table');
             var row = table.insertRow(0);
-            alert("displaySalary row" + row);
+            //alert("displaySalary row" + row);
             var cellName = row.insertCell(0);
             var cellSalary = row.insertCell(1);
             cellName.innerHTML = persons[i];
             cellSalary.innerHTML = salaries[j];
-            alert("displaySalary cellName" + cellName);
+            //alert("displaySalary cellName" + cellName);
         }
     }
 }
