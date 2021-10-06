@@ -2,7 +2,14 @@ var persons = [];
 var salaries = []; 
 
 function addSalary(){
-    var person = $("employees").value;
+    //var person = $("employees").value;
+    var person = prompt("Please enter employee's name: "); 
+    
+    var employee = document.createElement("option"); 
+    employee.textContent = person; 
+    var employees = $("employees"); 
+    employees.appendChild(employee); 
+
     persons.push(person); 
 
     var salary = prompt("Please enter salary for " + person);
