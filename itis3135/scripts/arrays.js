@@ -42,16 +42,16 @@ function displayResults(){
 }
 
 function displaySalary(){
+    var table = $('results_table');
+    var row = table.insertRow(0);
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
-        for(var j = 0; j < salaries.length; j++){ 
-            var table = $('results_table');
-            var row = table.insertRow(0);
-            var cellName = row.insertCell(0);
-            var cellSalary = row.insertCell(1);
-            cellName.innerHTML = persons[i];
-            cellSalary.innerHTML = salaries[j];
-        }
+        var cellName = row.insertCell(0);
+        cellName.innerHTML = persons[i];
+    }
+    for(var j = 0; j < salaries.length; j++){ 
+        var cellSalary = row.insertCell(1);
+        cellSalary.innerHTML = salaries[j];
     }
 }
 
