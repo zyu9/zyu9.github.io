@@ -2,7 +2,7 @@ var persons = [];
 var salaries = []; 
 
 function addSalary(){
-    var person = document.getElementById("employees").value;
+    var person = $("employees").value;
     persons.push(person); 
 
     var salary = prompt("Please enter salary for " + person);
@@ -10,6 +10,7 @@ function addSalary(){
         salary = prompt("Please enter a valid number: "); 
     }
     salaries.push(salary); 
+    alert("Add Salary :" + persons); 
 }
 
 function displayResults(){
@@ -44,12 +45,13 @@ function displayResults(){
 }
 
 function displaySalary(){
-    alert("displaySalary" + persons.length);
+    alert("displaySalary: " + persons.length);
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
-            var table = document.getElementById("results_table");
+            var table = $('results_table');
             var row = table.insertRow(0);
+            alert("displaySalary row" + row);
             var cellName = row.insertCell(0);
             var cellSalary = row.insertCell(1);
             cellName.innerHTML = persons[i];
