@@ -28,6 +28,7 @@ function displayResults(){
         sum += salaries[i]; 
     }
     var average = sum/salaries.length; 
+    alert("displayResults: average " + average);
     document.getElementById("average").innerHTML = average; 
 
     //add h2 title for highest salary
@@ -39,6 +40,7 @@ function displayResults(){
     salaries.sort(function(a,b){return a - b}); 
     var highest = salaries[salaries.length-1];
     document.getElementById("highest").innerHTML = highest; 
+    alert("displayResults: highest " + highest);
 }
 
 function displaySalary(){
@@ -52,6 +54,7 @@ function displaySalary(){
             var cellSalary = row.insertCell(1);
             cellName.innerHTML = persons[i];
             cellSalary.innerHTML = salaries[j];
+            alert("displaySalary cellName" + cellName);
         }
     }
 }
@@ -67,11 +70,15 @@ function validEntry(entry){
 
 //Make application move the cursor to the name field 
 //when the application starts and after a name and salary have been added, 
-//or when the the user clicks the add button.  
+//or when the the user clicks the add button.
+
+var $ = function (id) {
+    return document.getElementById(id);
+};
 
 window.onload = function(){
-    document.getElementById('addSalary').onclick = addSalary; 
-    document.getElementById('displayResults').onclick = displayResults; 
-    document.getElementById('displaySalary').onclick = displaySalary; 
+    $('addSalary').onclick = addSalary; 
+    $('displayResults').onclick = displayResults; 
+    $('displaySalaries').onclick = displaySalary; 
 }
 
