@@ -46,16 +46,13 @@ function displayResults(){
 function displaySalary(){
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
-        for(var j = 0; j < salaries.length; j++){
-            alert("displaySalary: array"); 
+        for(var j = 0; j < salaries.length; j++){ 
             var table = $('results_table');
             var row = table.insertRow(0);
-            //alert("displaySalary row");
             var cellName = row.insertCell(0);
             var cellSalary = row.insertCell(1);
             cellName.innerHTML = persons[i];
             cellSalary.innerHTML = salaries[j];
-            //alert("displaySalary cellName" + cellName);
         }
     }
 }
