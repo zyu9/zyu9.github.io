@@ -14,9 +14,16 @@ function addSalary(){
 
 function displayResults(){
     alert("displayResults" + persons);
+    //const title1 = document.createElement("h2");
+    //title1.textContent = "The average salary is: ";
+    //const node1 = document.createTextNode("The average salary is: ");
+    //title1.appendChild(node1);
+    //const results = $("results");
+    //results.appendChild(title1);
+
     //add h2 title for average salary
     var results = $("results"); 
-    var title1 = $('h2'); 
+    var title1 = document.createElement("h2"); 
     title1.textContent = "The average salary is: ";
     results.appendChild(title1); 
     //results.insertBefore(title1, document.getElementById("average")); 
