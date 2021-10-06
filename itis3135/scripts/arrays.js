@@ -2,8 +2,11 @@ var persons = [];
 var salaries = []; 
 
 function addSalary(){
-    //var person = $("employees").value;
     var person = prompt("Please enter employee's name: "); 
+    if(!validNameEntry(person)){
+        alert("Your entry is invalid!"); 
+        person = prompt("Please enter a valid name: "); 
+    }
     
     var employee = document.createElement("option"); 
     employee.textContent = person; 
@@ -13,8 +16,9 @@ function addSalary(){
     persons.push(person); 
 
     var salary = prompt("Please enter salary for " + person);
-    while(validEntry(salary)){
-        salary = prompt("Please enter a valid number: "); 
+    if(!validSalaryEntry(salary)){
+        alert("Your entry is invalid!"); 
+        salary = prompt("Please enter a valid number for salary: "); 
     }
     salaries.push(salary); 
 }
@@ -52,10 +56,18 @@ function displaySalary(){
     }
 }
 
-function validEntry(entry){
-    var valid = false; 
+function validSalaryEntry(entry){
+    var valid = true; 
     if(isNaN(entry) || entry == null){
-        valid = true; 
+        valid = false; 
+    }
+    return valid; 
+}
+
+function validNameEntry(entry){
+    var valid = true; 
+    if(entry == null){
+        valid = false; 
     }
     return valid; 
 }
