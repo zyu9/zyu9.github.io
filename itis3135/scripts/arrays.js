@@ -10,9 +10,11 @@ function addSalary(){
         salary = prompt("Please enter a valid number: "); 
     }
     salaries.push(salary); 
+    alert("addSalary" + salaries);
 }
 
 function displayResults(){
+    alert("displayResults");
     //add h2 title for average salary
     const results = document.getElementById("results"); 
     var title1 = document.createElement('h2'); 
@@ -39,6 +41,7 @@ function displayResults(){
 }
 
 function displaySalary(){
+    alert("displaySalary");
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
