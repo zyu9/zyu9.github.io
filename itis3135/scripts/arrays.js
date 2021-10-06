@@ -14,19 +14,12 @@ function addSalary(){
 
 function displayResults(){
     alert("displayResults" + persons);
-    //const title1 = document.createElement("h2");
-    //title1.textContent = "The average salary is: ";
-    //const node1 = document.createTextNode("The average salary is: ");
-    //title1.appendChild(node1);
-    //const results = $("results");
-    //results.appendChild(title1);
-
     //add h2 title for average salary
-    var results = $("results"); 
     var title1 = document.createElement("h2"); 
     title1.textContent = "The average salary is: ";
+    var results = $("results"); 
     results.appendChild(title1); 
-    //results.insertBefore(title1, document.getElementById("average")); 
+    //results.insertBefore(title1, $("average")); 
 
     //find the average salary & display to <p>
     var sum = 0; 
@@ -54,9 +47,10 @@ function displaySalary(){
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
+            alert("displaySalary: array"); 
             var table = $('results_table');
             var row = table.insertRow(0);
-            alert("displaySalary row");
+            //alert("displaySalary row");
             var cellName = row.insertCell(0);
             var cellSalary = row.insertCell(1);
             cellName.innerHTML = persons[i];
