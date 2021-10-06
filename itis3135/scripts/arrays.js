@@ -10,14 +10,12 @@ function addSalary(){
         salary = prompt("Please enter a valid number: "); 
     }
     salaries.push(salary); 
-    alert("addSalary" + salaries);
-    alert("addSalary" + persons);
 }
 
 function displayResults(){
     alert("displayResults" + persons);
     //add h2 title for average salary
-    const results = document.getElementById("results"); 
+    var results = document.getElementById("results"); 
     var title1 = document.createElement('h2'); 
     title1.textContent = "The average salary is: ";
     results.appendChild(title1); 
