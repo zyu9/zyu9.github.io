@@ -13,13 +13,11 @@ function addSalary(){
 }
 
 function displayResults(){
-    alert("displayResults" + persons);
     //add h2 title for average salary
     var title1 = document.createElement("h2"); 
     title1.textContent = "The average salary is: ";
     var results = $("results"); 
-    results.appendChild(title1); 
-    //results.insertBefore(title1, $("average")); 
+    results.insertBefore(title1, $("average")); 
 
     //find the average salary & display to <p>
     var sum = 0; 
