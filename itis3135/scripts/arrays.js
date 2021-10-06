@@ -15,7 +15,7 @@ function addSalary(){
 }
 
 function displayResults(){
-    //alert("displayResults" + persons);
+    alert("displayResults" + persons);
     //add h2 title for average salary
     const results = document.getElementById("results"); 
     var title1 = document.createElement('h2'); 
@@ -46,7 +46,7 @@ function displayResults(){
 }
 
 function displaySalary(){
-    //alert("displaySalary" + salaries);
+    alert("displaySalary" + salaries);
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
