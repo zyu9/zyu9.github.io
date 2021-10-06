@@ -40,10 +40,8 @@ function displaySalary(){
         var row = table.insertRow(0);
         var cellName = row.insertCell(0);
         cellName.innerHTML = persons[i];
-        for(var j = 0; j < salaries.length; j++){ 
-            var cellSalary = row.insertCell(1);
-            cellSalary.innerHTML = salaries[j];
-        }
+        var cellSalary = row.insertCell(1);
+        cellSalary.innerHTML = salaries[i];
     }
 }
 
