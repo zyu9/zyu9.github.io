@@ -26,7 +26,7 @@ function displayResults(){
     }
     var average = sum/salaries.length; 
 
-    alert("displayResults: average " + average);
+    alert("displayResults: sum " + sum);
     $("average").innerHTML = average; 
 
     //add h2 title for highest salary
