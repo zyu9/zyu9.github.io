@@ -44,14 +44,12 @@ function displayResults(){
 }
 
 function displaySalary(){
-    alert("displaySalary: " + persons.length);
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
-            alert("displaySalary: array"); 
             var table = $('results_table');
             var row = table.insertRow(0);
-            //alert("displaySalary row" + row);
+            alert("displaySalary row");
             var cellName = row.insertCell(0);
             var cellSalary = row.insertCell(1);
             cellName.innerHTML = persons[i];
