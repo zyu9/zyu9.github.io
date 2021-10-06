@@ -15,7 +15,7 @@ function addSalary(){
 }
 
 function displayResults(){
-    //alert("displayResults");
+    alert("displayResults" + persons);
     //add h2 title for average salary
     const results = document.getElementById("results"); 
     var title1 = document.createElement('h2'); 
@@ -42,7 +42,7 @@ function displayResults(){
 }
 
 function displaySalary(){
-    //alert("displaySalary");
+    alert("displaySalary" + salaries);
     //get the names and values from the arrays and display them as rows
     for(var i = 0; i < persons.length; i++){
         for(var j = 0; j < salaries.length; j++){
@@ -73,6 +73,5 @@ window.onload = function(){
     document.getElementById('addSalary').onclick = addSalary; 
     document.getElementById('displayResults').onclick = displayResults; 
     document.getElementById('displaySalary').onclick = displaySalary; 
-    alert("Persons: " + persons);
 }
 
