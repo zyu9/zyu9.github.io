@@ -1,36 +1,46 @@
 var persons = []; 
 var salaries = []; 
 
-function addSalary(){
-    var person = prompt("Please enter employee's name: "); 
-    while(validNameEntry(person)){
-        alert("Your entry is invalid!"); 
-        person = prompt("Please enter a valid name: "); 
+function addName()
+{
+    var person = $("enterNames").value; 
+
+    if(validNameEntry(person))
+    {
+        alert("Your entry is invalid!");
+    }else{
+        var employee = document.createElement("option"); 
+        employee.textContent = person; 
+        var employees = $("employees"); 
+        employees.appendChild(employee); 
+        $("enterSalaries").focus();
     }
-
-    var employee = document.createElement("option"); 
-    employee.textContent = person; 
-    var employees = $("employees"); 
-    employees.appendChild(employee); 
-
-    persons.push(person); 
-
-    var salary = prompt("Please enter salary for " + person);
-    while(validSalaryEntry(salary)){
-        alert("Your entry is invalid!"); 
-        salary = prompt("Please enter a valid number for salary: "); 
-    }
-    salaries.push(salary); 
 }
 
-function displayResults(){
+function addSalary()
+{
+    var person = $('employees').value; 
+    persons.push(person); 
+    var salary = $('enterSalaries').value;
+    if(validSalaryEntry(salary))
+    {
+        alert("Your entry is invalid!"); 
+    }else{
+        salaries.push(salary); 
+        $("enterNames").focus();
+    }
+}
+
+function displayResults()
+{
     var title1 = document.createElement("h2"); 
     title1.textContent = "The average salary is: ";
     var results = $("results"); 
     results.insertBefore(title1, $("average")); 
 
     var sum = 0; 
-    for(var i = 0; i < salaries.length; i++){
+    for(var i = 0; i < salaries.length; i++)
+    {
         sum += parseInt(salaries[i]); 
     }
     var average = sum/salaries.length; 
@@ -45,9 +55,11 @@ function displayResults(){
     $("highest").innerHTML = highest; 
 }
 
-function displaySalary(){
+function displaySalary()
+{
     var table = $('results_table');
-    for(var i = 0; i < persons.length; i++){
+    for(var i = 0; i < persons.length; i++)
+    {
         var row = table.insertRow(0);
         var cellName = row.insertCell(0);
         cellName.innerHTML = persons[i];
@@ -56,17 +68,21 @@ function displaySalary(){
     }
 }
 
-function validSalaryEntry(entry){
+function validSalaryEntry(entry)
+{
     var valid = false; 
-    if(isNaN(entry) || entry == null){
+    if(isNaN(entry) || entry == null)
+    {
         valid = true; 
     }
     return valid; 
 }
 
-function validNameEntry(entry){
+function validNameEntry(entry)
+{
     var valid = false; 
-    if(!isNaN(entry) || entry == null){
+    if(!isNaN(entry) || entry == null)
+    {
         valid = true; 
     }
     return valid; 
@@ -77,8 +93,10 @@ var $ = function (id) {
 };
 
 window.onload = function(){
+    $('addName').onclick = addName; 
     $('addSalary').onclick = addSalary; 
     $('displayResults').onclick = displayResults; 
     $('displaySalary').onclick = displaySalary; 
+    $("enterNames").focus();
 }
 

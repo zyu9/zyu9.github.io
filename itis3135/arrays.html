@@ -28,15 +28,18 @@
         <main>
             <h2>Arrays</h2>
             <form>
-                <label for="employees">Choose an Employee:</label>
-                <select name="employees" id="employees">
-                </select>
+                <input type="text" id="enterNames" value="Please Enter Name"></input> &nbsp; &nbsp; &nbsp;
+                <input type="button" id="addName" value="Add Name" ></input>
                 <br><br>
-                <input type="button" value="Add Salary" id="addSalary"></input>
-                <br>
-                <input type="button" value="Display Results" id="displayResults" ></input>
-                <br>
-                <input type="button" value="Display Salary" id="displaySalary"></input>
+                <label for="employees">Choose an Employee:</label>
+                <select name="employees" id="employees"></select>
+                <br><br>
+                <input type="text" id="enterSalaries" value="Please Enter Salary"></input> &nbsp; &nbsp; &nbsp;
+                <input type="button" id="addSalary" value="Add Salary" ></input>
+                <br><br>
+                <input type="button" id="displayResults" value="Display Results"></input>
+                <br><br>
+                <input type="button" id="displaySalary" value="Display Salary"></input>
             </form>
 
             <div id="results">
