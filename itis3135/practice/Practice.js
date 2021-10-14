@@ -38,8 +38,7 @@ function calculateTotal(){
 		var dTotal = document.createElement("p");
 		dTotal.textContent = "Total: " + total; 
 		var displayTotal = $("total");
-		displayTotal.appendChild(dTotal);
-		document.body.innerHTML = document.body.innerHTML.replace(dTotal, dTotal);
+		displayTotal.innerHTML = dTotal;
 	}
 }
 
