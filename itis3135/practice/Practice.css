@@ -54,6 +54,11 @@ input {
 #buttons {
 	margin-top: 0;
 	width: 1000px;
+	background:#493737;
+    color:white;
+    height:50px;
+    width:100px;
+    font-size:15px;
 }
 /* add styling for buttons on homepage */
 

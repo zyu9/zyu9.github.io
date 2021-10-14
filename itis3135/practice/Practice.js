@@ -3,6 +3,8 @@ var $ = function(id) {
 };
 
 var coffeeName, price, total, detail; 
+var n = 0; 
+var m = 0; 
 
 
 function espresso(){
@@ -13,6 +15,7 @@ function espresso(){
 	order.textContent = "$" + price + " - " + coffeeName + " - " + detail; 
 	var orders = $("order");
 	orders.appendChild(order); 
+	n = n+1; 
 }
 
 function cappuccino(){
@@ -23,17 +26,21 @@ function cappuccino(){
 	order.textContent = "$" + price + " - " + coffeeName + " - " + detail; 
 	var orders = $("order");
 	orders.appendChild(order); 
+	m = m+1; 
+}
+
+function calculateTotal(){
+	if(n > 0 || m > 0){
+		total = parseFloat((1.95 * n + 3.45 * m).toFixed(2));
+		var displayTotal = $("total");
+		displayTotal.appendChild(total);
+	}
 }
 
 window.onload = function() {
-
-
 	//add onclick event handler for each image
 	// for click event add item to order and update total
 	$("espresso").onclick = espresso; 
 	$("cappuccino").onclick = cappuccino; 
 	// display order and total
-
-	
-		
 }; // end onload
