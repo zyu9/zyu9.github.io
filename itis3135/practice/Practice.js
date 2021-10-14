@@ -11,7 +11,7 @@ window.onload = function() {
 
 	//add onclick event handler for each image
 	// for click event add item to order and update total
-	$("menu").onclick = click; 
+	$("espresso").onclick = click; 
 	// display order and total
 
 	
