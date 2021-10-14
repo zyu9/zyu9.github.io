@@ -34,6 +34,7 @@ function cappuccino(){
 function calculateTotal(){
 	if(n > 0 || m > 0){
 		total = parseFloat((1.95 * n + 3.45 * m).toFixed(2));
+		
 		var dTotal = document.createElement("p");
 		dTotal.textContent = "Total: " + total; 
 		var displayTotal = $("total");

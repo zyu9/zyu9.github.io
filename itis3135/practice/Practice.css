@@ -54,11 +54,12 @@ input {
 #buttons {
 	margin-top: 0;
 	width: 1000px;
+}
+/* add styling for buttons on homepage */
+.button{
 	background:#493737;
     color:white;
 }
-/* add styling for buttons on homepage */
-
 
 
 
