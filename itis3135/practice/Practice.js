@@ -16,6 +16,7 @@ function espresso(){
 	var orders = $("order");
 	orders.appendChild(order); 
 	n = n+1; 
+	calculateTotal(); 
 }
 
 function cappuccino(){
@@ -27,6 +28,7 @@ function cappuccino(){
 	var orders = $("order");
 	orders.appendChild(order); 
 	m = m+1; 
+	calculateTotal();
 }
 
 function calculateTotal(){
