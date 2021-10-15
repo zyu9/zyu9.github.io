@@ -61,6 +61,11 @@ form {
   color:black;
 }
 
+img{
+  width: 50%;
+  height: auto;
+}
+
 .submit{
   background-color: #808080;
   color:#FFB8B8; 
