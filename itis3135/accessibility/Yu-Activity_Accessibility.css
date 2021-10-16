@@ -31,19 +31,13 @@ body {
 }
 
 /* table format*/
+td, 
 th {
   border: 1px solid black;
   padding: 8px;
   background-color:#262626;
   color:powderblue;
   text-align: left;
-}
-
-td{
-  border: 1px solid black;
-	padding: .2em 1em .2em .5em;
-	text-align: left;
-	vertical-align: middle;
 }
 
 th {
