@@ -76,11 +76,6 @@ img{
 }
 
 /* footer bottom of page*/
-footer {
-  bottom: 0;
-  right: 0;
-  padding-right: 70px;
-}
 
 abbr {
   text-decoration: none;
