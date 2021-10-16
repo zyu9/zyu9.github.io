@@ -1,7 +1,7 @@
 /* background image */
 html {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: url("images/Candle-Background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -31,6 +31,12 @@ body {
 }
 
 /* table format*/
+table{
+  border-collapse: collapse;
+  border: 1px solid black;
+  table-layout: fixed;
+  width: 100%;  
+}
 td, 
 th {
   border: 1px solid black;
