@@ -1,7 +1,7 @@
 /* background image */
 html {
   width: 100%;
-  height: 200%;
+  height: 250%;
   background-image: url("images/Candle-Background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -15,10 +15,14 @@ h2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1 , 
-caption{
+h1 {
   font-size: 60px;
   padding-top: 20px;
+}
+
+caption{
+  font-size: 30px;
+  padding: auto;
 }
 
 /* font size */
@@ -73,11 +77,9 @@ img{
 
 /* footer bottom of page*/
 footer {
-  position: absolute;
   bottom: 0;
   right: 0;
   padding-right: 70px;
- 
 }
 
 abbr {
