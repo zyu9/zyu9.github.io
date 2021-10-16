@@ -67,12 +67,12 @@ form {
 
 .tableImg{
   max-width: 30%;
-  height: 5%;
+  height: auto;
 }
 
 .validImg{
   width: 45%;
-  height: 35%;
+  height: auto;
 }
 
 .submit{
