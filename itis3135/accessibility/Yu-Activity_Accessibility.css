@@ -63,12 +63,12 @@ form {
 
 img{
   width: 50%;
-  height: auto;
+  height: 25%;
 }
 
 .submit{
   background-color: rgb(31, 1, 70);
-  color:#F5CCCC; 
+  color:#e9f5cc; 
 }
 
 /* footer bottom of page*/
@@ -82,7 +82,6 @@ footer {
 
 abbr {
   text-decoration: none;
-
 }
 
 /* whitespace */
