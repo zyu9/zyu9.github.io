@@ -32,7 +32,7 @@ body {
 
 /* table format*/
 table{
-  table-layout: fixed;
+  table-layout: auto;
   width: 50%;  
 }
 td, 
