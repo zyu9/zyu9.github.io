@@ -31,7 +31,6 @@ body {
 }
 
 /* table format*/
-td,
 th {
   border: 1px solid black;
   padding: 8px;
@@ -40,12 +39,18 @@ th {
   text-align: left;
 }
 
+td{
+  border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+}
+
 th {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: left;
   background-color:#262626;
- 
   color:#e9f5cc;
 }
 
