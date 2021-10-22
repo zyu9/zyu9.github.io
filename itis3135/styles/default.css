@@ -22,12 +22,12 @@ header, footer
 }
 
 .slideshow_images{
-	width: 50%;
+	width: 100%;
   	height: auto;
 }
 
 .slideshow_thumbnail{
-	width: 5%;
+	width: 25%;
   	height: auto;
 }
 
