@@ -13,6 +13,11 @@ header, footer
 	text-align: center;
 }
 
+.slideshow{
+	width: 25%;
+  	height: auto;
+}
+
 .submit_button{
 	background:#787878;
     color:white;
