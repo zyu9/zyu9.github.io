@@ -17,10 +17,6 @@ header, footer
 	position: absolute;
 }
 
-.slideshow_slides{
-	display: none;
-}
-
 .slideshow_images{
 	width: 100%;
   	height: auto;
