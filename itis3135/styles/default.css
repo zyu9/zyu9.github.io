@@ -13,6 +13,14 @@ header, footer
 	text-align: center;
 }
 
+.slideshow_container{
+	position: relative;
+}
+
+.slideshow_slides{
+	display: none;
+}
+
 .slideshow_images{
 	width: 50%;
   	height: auto;
@@ -51,6 +59,18 @@ header, footer
 	position: absolute;
 	top: 0;
 }
+
+.slideshow_row::after{
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.slideshow_column{
+	float: left;
+	width: 16.66%;
+}
+
 
 .submit_button{
 	background:#787878;
