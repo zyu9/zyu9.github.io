@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+/* $(document).ready(function() { 
     // preload images 
     $("#image_list a").each(function() { 
         var swappedImage = new Image(); 
@@ -21,4 +21,4 @@ $(document).ready(function() {
  
     // move focus to first thumbnail 
     $("li:first-child a").focus(); 
-}); // end ready 
+}); // end ready  */
