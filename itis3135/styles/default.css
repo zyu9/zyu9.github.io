@@ -14,7 +14,7 @@ header, footer
 }
 
 .slideshow_container{
-	position: relative;
+	position: absolute;
 }
 
 .slideshow_slides{
