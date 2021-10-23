@@ -31,11 +31,11 @@ $(document).ready(function() {
     $(".prev").click(function(evt){
         $("#image_list a").attr("href", function(i, o) { 
             // swap image 
-            var imageURL = images[o-1]; 
+            var imageURL = images[i-1]; 
             $("#main_image").attr("src", imageURL); 
             
             //swap caption 
-            var caption = titles[o-1]; 
+            var caption = titles[i-1]; 
             $("#caption").text(caption); 
         }); 
     }); 
