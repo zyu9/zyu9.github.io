@@ -28,19 +28,19 @@ $(document).ready(function() {
     // move focus to first thumbnail 
     $("li:first-child a").focus(); 
 
-    $(".prev").click(function(evt){
-        $("#image_list a").attr("href", function(i, o) { 
+    $(".prev").click(function(){
+        $("#image_list a").attr("href", function(i) { 
             // swap image 
-            var imageURL = $(i-1).attr("href"); 
+            var imageURL = images[i-1]; 
             $("#main_image").attr("src", imageURL); 
             
             //swap caption 
-            var caption = $(i-1).attr("title"); 
+            var caption = titles[i-1]; 
             $("#caption").text(caption); 
         }); 
     }); 
 
-    $(".next").click(function(evt){
+    $(".next").click(function(){
         $("#image_list a").attr("href", function(i)  { 
             // swap image 
             var imageURL = images[i+1]; 
