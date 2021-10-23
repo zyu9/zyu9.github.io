@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="styles/default.css">
         <script src="scripts/slideshow.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>Brand Slideshow</title>
     </head>
 
@@ -69,27 +70,27 @@
 
             <div class="slideshow_row">
                 <div class="slideshow_column">
-                    <img class="slideshow_thumbnail" src="images/dog-yoranian-unsplash.jpg" alt="A Yoranain Dog"></a>
+                    <img class="slideshow_thumbnail" onclick="currentSlide(1)" src="images/dog-yoranian-unsplash.jpg" alt="A Yoranain Dog"></a>
                 </div>
 
                 <div class="slideshow_column">
-                    <img class="slideshow_thumbnail" src="images/dog-fem.jpg" alt="A dog looking otherside"></a>
+                    <img class="slideshow_thumbnail" onclick="currentSlide(2)" src="images/dog-fem.jpg" alt="A dog looking otherside"></a>
                 </div>
                 
                 <div class="slideshow_column">
-                    <img class="slideshow_thumbnail" src="images/dog-jor.jpg" alt="A cute dog"></a>
+                    <img class="slideshow_thumbnail" onclick="currentSlide(3)" src="images/dog-jor.jpg" alt="A cute dog"></a>
                 </div>
 
                 <div class="slideshow_column">
-                    <img class="slideshow_thumbnail" src="images/dog-pen.jpg" alt="A dog looing at you"></a>
+                    <img class="slideshow_thumbnail" onclick="currentSlide(4)" src="images/dog-pen.jpg" alt="A dog looing at you"></a>
                 </div>
 
                 <div class="slideshow_column">
-                    <img class="slideshow_thumbnail" src="images/dog-pup.jpg" alt="A happy dog"></a>
+                    <img class="slideshow_thumbnail" onclick="currentSlide(5)" src="images/dog-pup.jpg" alt="A happy dog"></a>
                 </div>
 
                 <div class="slideshow_column">
-                    <img class="slideshow_thumbnail" src="images/dog-yut.jpg" alt="A dog behind a flower"></a>
+                    <img class="slideshow_thumbnail" onclick="currentSlide(6)" src="images/dog-yut.jpg" alt="A dog behind a flower"></a>
                 </div>
             </div>
         </main>
