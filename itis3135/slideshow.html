@@ -29,44 +29,22 @@
         <main>
             <h2>Brand Slideshow</h2>
             <p>Slide through images</p> 
-            <div class="slideshow_container" id="slideshow-container"> 
-                <div class="slideshow_slides">
-                    <div class="numbertext">1 / 6</div>
-                    <img class="slideshow_images" src="images/dog-yoranian-unsplash.jpg" alt="A Yoranain Dog"></a>
-                </div>
-
-                <div class="slideshow_slides">
-                    <div class="numbertext">2 / 6</div>
-                    <img class="slideshow_images" src="images/dog-fem.jpg" alt="A dog looking otherside"></a>
-                </div>
-
-                <div class="slideshow_slides">
-                    <div class="numbertext">3 / 6</div>
-                    <img class="slideshow_images" src="images/dog-jor.jpg" alt="A cute dog"></a>
-                </div>
-
-                <div class="slideshow_slides">
-                    <div class="numbertext">4 / 6</div>
-                    <img class="slideshow_images" src="images/dog-pen.jpg" alt="A dog looing at you"></a>
-                </div>
-
-                <div class="slideshow_slides">
-                    <div class="numbertext">5 / 6</div>
-                    <img class="slideshow_images" src="images/dog-pup.jpg" alt="A happy dog"></a>
-                </div>
-
-                <div class="slideshow_slides">
-                    <div class="numbertext">6 / 6</div>
-                    <img class="slideshow_images"src="images/dog-yut.jpg" alt="A dog behind a flower"></a>
-                </div>
-            </div> 
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
+            <ul id="image_list"> 
+                <li class="slideshow_list"><a href="images/dog-yoranian-unsplash.jpg" title="A Yoranain Dog"> 
+                    <img class="slideshow_images" src="images/dog-yoranian-unsplash.jpg" alt="A Yoranain Dog"></a></li> 
+                <li class="slideshow_list"><a href="images/dog-fem.jpg" title="A dog looking otherside"> 
+                    <img class="slideshow_images" src="images/dog-fem.jpg" alt="A dog looking otherside"></a></li> 
+                <li class="slideshow_list"><a href="images/images/dog-jor.jpg" title="A cute dog"> 
+                    <img class="slideshow_images" src="images/dog-jor.jpg" alt="A cute dog"></a></li> 
+                <li class="slideshow_list"><a href="images/dog-pen.jpg" title="A dog looking at you"> 
+                    <img class="slideshow_images" src="images/dog-pen.jpg" alt="A dog looing at you"></a></li> 
+                <li class="slideshow_list"><a href="images/dog-pup.jpg" title="A happy dog"> 
+                    <img class="slideshow_images" src="images/dog-pup.jpg" alt="A happy dog"></a></li> 
+                <li class="slideshow_list"><a href="images/dog-yut.jpg" title="A dog behind a flower"> 
+                    <img class="slideshow_images" src="images/dog-yut.jpg" alt="A dog behind a flower"></a></li> 
+            </ul> 
+            <h2 id="caption">A Yoranain Dog</h2> 
+            <p><img id="main_image" src="images/dog-yoranian-unsplash.jpg" alt="A Yoranain Dog"></p> 
 
             <div class="slideshow_row">
                 <div class="slideshow_column">

@@ -30,6 +30,10 @@ header, footer
   	height: auto;
 }
 
+.slideshow_list{
+	display: inline;
+}
+
 .prev,
 .next {
   cursor: pointer;
