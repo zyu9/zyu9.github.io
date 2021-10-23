@@ -4,6 +4,9 @@ $(document).ready(function() {
 
     // preload images 
     $("#image_list a").each(function() { 
+        images.push($(this).attr("href"));
+        titles.push($(this).attr("title")); 
+
         var swappedImage = new Image(); 
         swappedImage.src = $(this).attr("href"); 
     }); 
@@ -27,8 +30,7 @@ $(document).ready(function() {
 
     $(".prev").click(function(evt){
         $("#image_list a").each(function(i) { 
-            images.push($(this).attr("href"));
-            titles.push($(this).attr("title")); 
+            
 
             // swap image 
             var imageURL = images[i-1]; 
@@ -36,6 +38,21 @@ $(document).ready(function() {
             
             //swap caption 
             var caption = titles[i-1]; 
+            $("#caption").text(caption); 
+        }); 
+        
+        // cancel the default action of the link 
+        evt.preventDefault();  // jQuery cross-browser method 
+    }); 
+
+    $(".next").click(function(evt){
+        $("#image_list a").each(function(i) { 
+            // swap image 
+            var imageURL = images[i+1]; 
+            $("#main_image").attr("src", imageURL); 
+            
+            //swap caption 
+            var caption = titles[i+1]; 
             $("#caption").text(caption); 
         }); 
         
