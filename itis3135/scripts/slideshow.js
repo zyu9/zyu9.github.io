@@ -30,8 +30,6 @@ $(document).ready(function() {
 
     $(".prev").click(function(evt){
         $("#image_list a").each(function(i) { 
-            
-
             // swap image 
             var imageURL = images[i-1]; 
             $("#main_image").attr("src", imageURL); 
@@ -40,9 +38,6 @@ $(document).ready(function() {
             var caption = titles[i-1]; 
             $("#caption").text(caption); 
         }); 
-        
-        // cancel the default action of the link 
-        evt.preventDefault();  // jQuery cross-browser method 
     }); 
 
     $(".next").click(function(evt){
@@ -55,8 +50,5 @@ $(document).ready(function() {
             var caption = titles[i+1]; 
             $("#caption").text(caption); 
         }); 
-        
-        // cancel the default action of the link 
-        evt.preventDefault();  // jQuery cross-browser method 
     }); 
 }); // end ready 
