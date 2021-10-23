@@ -29,13 +29,13 @@ $(document).ready(function() {
     $("li:first-child a").focus(); 
 
     $(".prev").click(function(evt){
-        $("#image_list a").attr("href", function(i) { 
+        $("#image_list a").attr("href", function(i, o) { 
             // swap image 
-            var imageURL = images[i-1]; 
+            var imageURL = $(i-1).attr("href"); 
             $("#main_image").attr("src", imageURL); 
             
             //swap caption 
-            var caption = titles[i-1]; 
+            var caption = $(i-1).attr("title"); 
             $("#caption").text(caption); 
         }); 
     }); 
