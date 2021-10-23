@@ -12,9 +12,6 @@ header, footer
     color: #FFFBD6;
 	text-align: center;
 }
-.slideshow_slides{
-	display: none;
-}
 
 .slideshow_container{
 	position: absolute;
