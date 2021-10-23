@@ -29,7 +29,7 @@ $(document).ready(function() {
     $("li:first-child a").focus(); 
 
     $(".prev").click(function(evt){
-        $("#image_list a").attr("href", function(i, o) { 
+        $("#image_list a").attr("href", function(i) { 
             // swap image 
             var imageURL = images[i-1]; 
             $("#main_image").attr("src", imageURL); 
@@ -41,7 +41,7 @@ $(document).ready(function() {
     }); 
 
     $(".next").click(function(evt){
-        $("#image_list a").each(function(i) { 
+        $("#image_list a").attr("href", function(i)  { 
             // swap image 
             var imageURL = images[i+1]; 
             $("#main_image").attr("src", imageURL); 
