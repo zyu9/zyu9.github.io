@@ -1,12 +1,12 @@
 $(document).ready(function() { 
-    var index = 0; 
+    var index; 
     var images = []; 
     var titles = []; 
  
     // preload images 
     $("#image_list a").each(function() { 
         images.push($(this).attr("href"));
-        titles.push($(this).attr("href")); 
+        titles.push($(this).attr("title")); 
 
         var swappedImage = new Image(); 
         swappedImage.src = $(this).attr("href"); 
