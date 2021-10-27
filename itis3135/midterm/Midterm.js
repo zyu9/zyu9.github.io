@@ -5,6 +5,7 @@ var $ = function(id) { return document.getElementById(id); };
 
 function updateCalorie(){
     var day = $('day').value; 
+    alert(day);
     var calory = $('input_calorie').value; 
     var n; 
 
@@ -28,6 +29,7 @@ function showAverageCalories(){
         sum += parseInt(calories[i]); 
     }
     var average = sum/calories.length; 
+    alert(average); 
     $("average_consumed_calorie").innerHTML = average; 
 }
 
