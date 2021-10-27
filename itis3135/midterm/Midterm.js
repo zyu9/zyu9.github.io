@@ -8,7 +8,7 @@ function updateCalorie(){
     var calory = $('input_calorie').value; 
     var n; 
 
-    if(day == null || calory == null){
+    if(day === null || calory === null){
         alert("Enter a valid number!");
     }else{
         for(var i = 0; i < days.length; i++){
@@ -22,7 +22,13 @@ function updateCalorie(){
 }
 
 function showAverageCalories(){
-
+    var sum = 0; 
+    for(var i = 0; i < calories.length; i++)
+    {
+        sum += parseInt(calories[i]); 
+    }
+    var average = sum/calories.length; 
+    $("average_consumed_calorie").innerHTML = average; 
 }
 
 function  showMax(){
