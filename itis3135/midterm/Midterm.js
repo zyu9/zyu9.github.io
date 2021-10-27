@@ -14,9 +14,9 @@ function updateCalorie(){
         for(var i = 0; i < days.length; i++){
             if(day = days[i]){
                 n = i; 
-                calories[n] = calory; 
             }
         }
+        calories[n] = calory; 
         alert("Your updated calories details are: " + calories);
     }
 }
