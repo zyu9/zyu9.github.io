@@ -4,13 +4,7 @@ var calories = [3000,2500,1500,4000,2200,1200,4400];
 var $ = function(id) { return document.getElementById(id); };
 
 function updateCalorie(){
-    var elements = document.getElementsByName('day');
-              
-    for(i = 0; i < elements.length; i++) {
-        if(elements[i].checked){
-            var day = elements[i].value; 
-        }       
-    }
+    var day = $('day').value; 
 
     alert(day);
     var calorie = $('input_calorie').value; 
