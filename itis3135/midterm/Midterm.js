@@ -30,7 +30,7 @@ function showAverageCalories(){
     }
     var average = sum/calories.length; 
     alert(average); 
-    $("average_consumed_calorie").innerHTML = average; 
+    $("average_consumed_calorie").value = average; 
 }
 
 function  showMax(){
