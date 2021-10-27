@@ -6,10 +6,10 @@ var $ = function(id) { return document.getElementById(id); };
 function updateCalorie(){
     var day = $('day').value; 
     alert(day);
-    var calory = $('input_calorie').value; 
+    var calorie = $('input_calorie').value; 
     var n; 
 
-    if(day === null || calory === null){
+    if(day === null || calorie === null){
         alert("Enter a valid number!");
     }else{
         for(var i = 0; i < days.length; i++){
@@ -17,7 +17,7 @@ function updateCalorie(){
                 n = i; 
             }
         }
-        calories[n] = calory; 
+        calories[n] = calorie; 
         alert("Your updated calories details are: " + calories);
     }
 }
@@ -29,16 +29,19 @@ function showAverageCalories(){
         sum += parseInt(calories[i]); 
     }
     var average = sum/calories.length; 
-    alert(average); 
     $("average_consumed_calorie").value = average; 
 }
 
-function  showMax(){
-
+function showMax(){
+    var max = document.createElement("p"); 
+    max.textContent = "Your maximum calorie is ";
+    var show = $("showMax"); 
+    show.appendChild(max); 
 }
 
 window.onload = function() {
     //event handlers
     $('update').onclick = updateCalorie; 
     $('average').onclick = showAverageCalories; 
+    $('show_max').onmouseover = showMax; 
 };
