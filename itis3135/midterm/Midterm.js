@@ -33,8 +33,11 @@ function showAverageCalories(){
 }
 
 function showMax(){
+    calories.sort(function(a,b){return a - b}); 
+    var highest = calories[calories.length-1];
+
     var max = document.createElement("p"); 
-    max.textContent = "Your maximum calorie is ";
+    max.textContent = "Your maximum calorie is " + highest;
     var show = $("showMax"); 
     show.appendChild(max); 
 }
