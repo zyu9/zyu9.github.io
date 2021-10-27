@@ -12,7 +12,7 @@ function updateCalorie(){
         alert("Enter a valid number!");
     }else{
         for(var i = 0; i < days.length; i++){
-            if(day = days[i]){
+            if(day === days[i]){
                 n = i; 
             }
         }
@@ -32,4 +32,5 @@ function  showMax(){
 window.onload = function() {
     //event handlers
     $('update').onclick = updateCalorie; 
+    $('average').onclick = showAverageCalories; 
 };
