@@ -11,24 +11,47 @@
 <main>
     <h1>Weekly Calorie Calculator</h1>
     <!--add the form-->
+    <h2>Enter you Details</h2>
     <form id="your_details" name="your_details" action="#" >
-
-
-
+        <label for="enterName">Name</label><br>
+        <input type="text" id="enterName" placeholder="Enter your name"><br>
+        <label for="enterEmail">Email</label><br>
+        <input type="email" id="enterEmail" placeholder="Enter your email" ><br>
+        <input type="submit" value="Submit">
     </form>
 
     <!--add the radio buttons-->
-
+    <p>Choose a day: </p>
+    <form id="choose_day" name="choose_day">
+        <input type="radio" id="monday" name="day" value="Monday">
+        <label for="monday">Monday</label><br>
+        <input type="radio" id="tuesday" name="day" value="Tuesday">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="radio" id="wednesday" name="day" value="Wednesday">
+        <label for="wednesday">Wednesday</label><br>
+        <input type="radio" id="thursday" name="day" value="Thursday">
+        <label for="thursday">Thursday</label><br>
+        <input type="radio" id="friday" name="day" value="Friday">
+        <label for="friday">Friday</label><br>
+        <input type="radio" id="saturday" name="day" value="Saturday">
+        <label for="saturday">Saturday</label><br>
+        <input type="radio" id="sunday" name="day" value="Sunday">
+        <label for="sunday">Sunday</label><br>
+    </form>
 
     <!--input for calorie-->
-
+    <label for="input_calorie">Enter the Calorie</label><br>
+    <input type="number" id="input_calorie" value=""><br>
 
     <!--button for updating calorie-->
-
     <!--button for add calorie-->
-
+    <input type="button" id="update" name="update" value="Update"><br>
     <!--text box for showing Average calorie-->
+    <input type="button" id="average" name="average" value="Average Calorie"><br>
 
+    <!--Input field for the average consumed calorie with appropriate label.-->
+    <label for="average_consumed_calorie">Average Calorie Consumed </label><br>
+    <input type="text" id="average_consumed_calorie" value=""><br>
 
     <!--header for showing maximum calorie amount and cheat day-->
     <strong id="show_max">Show Maximum Calorie  and Cheat Day:</strong>
