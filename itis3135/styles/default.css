@@ -13,6 +13,10 @@ header, footer
 	text-align: center;
 }
 
+.signature{
+	font-style: italic;
+}
+
 .slideshow_images{
 	width: 50%;
   	height: auto;
