@@ -1,0 +1,44 @@
+body
+{
+	font-family:  cursive, Cambria, 'Malgun Gothic', math, Candara;
+	color: #ffcccc;
+	background-color: #ccffff;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+
+header, footer
+{
+    color: #ffcccc;
+	text-align: center;
+}
+
+h1
+{
+	color: #ffcccc;
+    font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
+	text-align: center;
+	line-height: 10px;
+}
+
+h2, h3
+{
+	color: #ffcccc;
+    font-family: fangsong, monospace, 'Malgun Gothic', cursive, emoji;
+	text-align: left;
+	line-height: 10px;
+}
+
+a
+{
+	text-decoration: none;
+	color: #ffcccc;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: overline underline;
+	color: purple;
+}
+
