@@ -10,14 +10,19 @@ $(document).ready(function() {
                 var imageURL = $(this).attr("href");
                 var caption = $(this).attr("title");  
 
-                $("#main_image").fadeOut(3000, function(){
-                        // swap image  
-                        $("#main_image").attr("src", imageURL).fadeIn(3000); 
-                }); 
                 $("#caption").fadeOut(3000, function(){
                         //swap caption 
                         $("#caption").text(caption).fadeIn(3000);        
                 });
+
+                $("#main_image").fadeOut(3000, function(){
+                        // swap image  
+                        $("#main_image").attr("src", imageURL).fadeIn(3000, function(){
+                                $("#caption").delay(3000).animate({fontSize: '2em'});
+                        }); 
+                }); 
+                
+                
                 // cancel the default action of the link 
                 evt.preventDefault();  // jQuery cross-browser method 
         }); // end click 
