@@ -7,17 +7,16 @@ $(document).ready(function() {
         // set up the event handlers for each link
         $("#image_list a").click(function(evt) { 
                 // get the image URL and caption for each image and animate the caption
-                $("#main_image").fadeOut(3000); 
-                $("#caption").fadeOut(3000);
-                
-                // swap image 
-                var imageURL = $(this).attr("href"); 
-                $("#main_image").attr("src", imageURL).fadeIn(3000); 
-                 
-                //swap caption 
-                var caption = $(this).attr("title");  
-                $("#caption").text(caption).fadeIn(3000); 
-                         
+                $("#main_image").fadeOut(3000, function(){
+                        // swap image 
+                        var imageURL = $(this).attr("href"); 
+                        $("#main_image").attr("src", imageURL).fadeIn(3000); 
+                }); 
+                $("#caption").fadeOut(3000, function(){
+                        //swap caption 
+                        var caption = $(this).attr("title");  
+                        $("#caption").text(caption).fadeIn(3000);        
+                });
                 // cancel the default action of the link 
                 evt.preventDefault();  // jQuery cross-browser method 
         }); // end click 
