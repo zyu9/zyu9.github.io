@@ -9,8 +9,8 @@ $(document).ready(function() {
                 // get the image URL and caption for each image and animate the caption
 
                 // swap image 
+                $(this).fadeOut(3000);
                 var imageURL = $(this).attr("href"); 
-                $("#main_image").fadeOut(3000);
                 $("#main_image").attr("src", imageURL).fadeIn(3000); 
                  
                 //swap caption 
