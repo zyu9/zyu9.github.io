@@ -15,7 +15,7 @@ $(document).ready(function() {
                  
                 //swap caption 
                 var caption = $(this).attr("title"); 
-                $("#caption").text(this).fadeIn(3000); 
+                $("#caption").text(this).fadeOut(3000); 
                 $("#caption").text(caption).fadeIn(3000); 
                          
                 // cancel the default action of the link 
