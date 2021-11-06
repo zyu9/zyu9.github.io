@@ -10,8 +10,8 @@ $(document).ready(function() {
 
                 // swap image 
                 var imageURL = $(this).attr("href"); 
-                //$(this).fadeOut(3000);
-                $("#main_image").fadeOut(3000).attr("src", imageURL); 
+                $("#main_image").fadeOut(3000);
+                $("#main_image").attr("src", imageURL).fadeIn(3000); 
                  
                 //swap caption 
                 var caption = $(this).attr("title"); 
