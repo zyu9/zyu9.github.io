@@ -33,6 +33,10 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  li a:hover:not(.active) {
     background-color: #111;
+  }
+  
+  .active {
+    background-color: #29b6f7;
   }
