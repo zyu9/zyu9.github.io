@@ -9,8 +9,8 @@ $(document).ready(function(){
             }else{
                 nextSlide - nextSlide.next(); 
                 nextSlideSource = nextSlide.attr("src"); 
-                $("#slide").attr("src". nextSlideSource).fadeIn(1000); 
+                $("#slide").attr("src", nextSlideSource).fadeIn(1000); 
             }
-        })
-    })
+        });
+    }, 3000);
 });
