@@ -4,6 +4,7 @@ $(document).ready(function() {
         randomStart: true, 
         captions: true, 
         pager: true,
+        pagerType: 'short',
         speed: 3000, 
         minSlides: 1,
         maxSlides: 1,
