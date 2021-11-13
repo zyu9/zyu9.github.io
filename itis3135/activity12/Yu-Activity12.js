@@ -5,6 +5,7 @@ $(document).ready(function() {
         captions: true, 
         pager: true,
         pagerType: 'short',
+        pagerSelector: "#id_pager",
         speed: 3000, 
         minSlides: 1,
         maxSlides: 1,
