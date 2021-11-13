@@ -1,4 +1,8 @@
 //<!-- jQuery call to the accordion() method. -->
 $(document).ready(function() {
-    $("#tabs").tabs();
+    $("#accordion").accordin({
+        event: "mouseover",
+        heightStyle: "content",
+        collapsible: true
+    });
 });
