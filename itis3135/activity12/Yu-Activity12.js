@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#slider").bxSlider({
         auto: true,
         randomStart: true, 
-        captions: true, 
+        captions: false, 
         speed: 3000, 
         minSlides: 1,
         maxSlides: 1,
