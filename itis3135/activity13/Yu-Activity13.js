@@ -15,9 +15,9 @@ $(document).ready(function() {
             $.each(data, function() { 
                 $.each(this, function(key, value) { 
                     $("#team").append( 
-                        "<h3>" + "Name: " + value.name + "<br>" +  
-                        "Title: " + value.title + "<br>" +  
-                        "Bio: " + value.bio + "<br><br>" 
+                        "<h3>" + value.name + "</h3>" + "<br>" +  
+                        value.title + "<br>" +  
+                        value.bio + "<br><br>" 
                     ); 
                 }); 
             });  
