@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        type: "getJSON",
+        type: "get",
         url: "team.json",
         beforeSend: function() {
             $("#team").html("Loading...");
