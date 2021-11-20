@@ -1,7 +1,8 @@
 $(document).ready(function() {
     $("#nav_list a").click(function(){
-        $.getJSON($(this).attr("title")+".json", function(data){ 
-           
+        var url = $(this).attr("title") + ".json"; 
+        $.getJSON(url, function(data){ 
+            alert(url);
             $.each(data, function(){ 
                 $.each(this, function(key, value){ 
                     $("#content h1").append(value.title); 
