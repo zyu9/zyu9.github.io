@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#nav_list a").click(function(){
         //alert("t"); 
         var url = $(this).attr("title") + ".json"; 
-        alert("t" + url); 
+        //alert("t" + url); 
         $.getJSON(url, function(data){ 
             alert("a");
             $.each(data, function(){ 
