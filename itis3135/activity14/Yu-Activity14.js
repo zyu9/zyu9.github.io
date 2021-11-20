@@ -11,7 +11,7 @@ $(document).ready(function() {
                     $("#content h1").html(value.title); 
                     $("#content h2").html(value.month);
                     $("#content h3").html(value.speaker);
-                    $("#content img").html("src", value.image);
+                    $("#content img").attr("src", value.image);
                     $("#content p").html(value.text);
                 });
             });
