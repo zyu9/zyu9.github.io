@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $("#nav_list a").click(function(){
+        alert("t"); 
         var url = $(this).attr("title") + ".json"; 
         $.getJSON(url, function(data){ 
             alert("a");
