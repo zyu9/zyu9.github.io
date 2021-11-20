@@ -9,9 +9,9 @@ $(document).ready(function() {
                     $("#content h3").append(value.speaker);
                     $("#content img").attr("src", value.image);
                     $("#content p").append(value.text);
-                }); 
-            });  
-        });
-    });
+                })
+            })
+        })
+    })
 	
 }); // end ready
