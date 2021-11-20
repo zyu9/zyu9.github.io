@@ -4,15 +4,15 @@ $(document).ready(function() {
         var url = $(this).attr("title") + ".json"; 
         //alert("t" + url); 
         $.getJSON(url, function(data){ 
-            alert("a");
+            //alert("a");
             $.each(data, function(){ 
                 $.each(this, function(key, value){ 
-                    alert("b");
-                    $("#content h1").append(value.title); 
-                    $("#content h2").append(value.month);
-                    $("#content h3").append(value.speaker);
-                    $("#content img").attr("src", value.image);
-                    $("#content p").append(value.text);
+                    //alert("b");
+                    $("#content h1").html(value.title); 
+                    $("#content h2").html(value.month);
+                    $("#content h3").html(value.speaker);
+                    $("#content img").html("src", value.image);
+                    $("#content p").html(value.text);
                 });
             });
         });
