@@ -6,8 +6,8 @@ $(document).ready(function(){
     $.getJSON(url, function(data) { 
         var html = ""; 
         $.each(data.items, function(i, item){ 
-            //html += "<a href=" +  item.media.m + "data-lightbox=" + "building" + "data-title=" + item.title + ">" + "<img src=" + item.media.m + ">" +"</a>"; 
-            html += "<img src=" + item.media.m + ">"; 
+            html += "<a href=" +  item.media.m + "data-lightbox=" + "building" + "data-title=" + item.title + ">" + "<img src=" + item.media.m + ">" +"</a>"; 
+            //html += "<img src=" + item.media.m + ">"; 
         }); 
         $("#new_building").html(html); 
     }); 
