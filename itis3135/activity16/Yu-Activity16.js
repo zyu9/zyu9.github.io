@@ -11,9 +11,4 @@ $(document).ready(function(){
         }); 
         $("#new_building").html(html); 
     }); 
-
-    lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
-    });
 });
