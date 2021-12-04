@@ -80,7 +80,7 @@ ul {
   .badge-notify{
     background:red;
     position:relative;
-    top: -20px;
+    top: 10px;
     right: 10px;
   }
   .my-cart-icon-affix {
