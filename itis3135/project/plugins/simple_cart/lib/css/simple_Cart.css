@@ -15,7 +15,6 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
-    //font-family: 'Berkshire Swash', sans-serif;
     font-family: 'Muli', sans-serif;
 }
 
@@ -28,7 +27,6 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 2rem;
 }
 .cart-grid  {
-    //height: calc(100vh - 190px);
     position: fixed;
 }
 .cart-heading{
