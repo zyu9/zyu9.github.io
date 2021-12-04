@@ -46,8 +46,14 @@ ul {
     height: auto;
   }
 
-  #slides img {
-      display: none;
+  .bx-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  #id_pager {
+    text-align: center;
+    font-size: 90%;
+    color: green;
   }
 
   div.gallery {
