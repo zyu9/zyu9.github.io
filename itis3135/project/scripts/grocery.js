@@ -24,9 +24,6 @@ $(function () {
         showCheckoutModal: true,
         numberOfDecimals: 2,
         cartItems: [
-          {id: 1, name: 'Strawberry', summary: 'summary 1', price: 5, quantity: 1, image: 'images/main/pexels-pixabay-46174.jpg'},
-          {id: 2, name: 'Pumpkin', summary: 'summary 2', price: 7, quantity: 2, image: 'images/main/pexels-freestocksorg-9886376.jpg'},
-          {id: 3, name: 'Lemoon', summary: 'summary 3', price: 6, quantity: 1, image: 'images/grocery/pexels-sarah-chai-7262803.jpg'}
         ],
         clickOnAddToCart: function($addTocart){
           goToCartIcon($addTocart);
