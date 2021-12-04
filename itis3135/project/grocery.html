@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="plugins/simple_cart/lib/css/simple_Cart.css">
+        <link rel="stylesheet" href="plugins/jquery.mycart-master/css/bootstrap.min.css">
+        <script src="plugins/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
+        <script src="plugins/jquery.mycart-master/js/bootstrap.min.js"></script>
+        <script src="plugins/jquery.mycart-master/js/jquery.mycart.min.js"></script>
+        <script src="plugins/jquery.mycart-master/js/jquery.mycart.js"></script>
+
         <link rel="stylesheet" type="text/css" href="styles/default.css">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="fontawesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="scripts/grocery.js"></script>
-        <script src="plugins/simple_cart/lib/js/jQuery.SimpleCart.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
-                crossorigin="anonymous"></script>
         <title>Grocery</title>
     </head>
 
@@ -23,6 +23,7 @@
                     <li><a href="seafood.html">Seafood</a></li>
                     <li><a href="electronics.html">Electronics</a></li>
                     <li><a href="furniture.html">Furniture</a></li>
+                    <li><span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
                 </ul>
             </div>
 
@@ -36,43 +37,66 @@
 
         <main>
             <h2>Grocery</h2>
-            <div class="gallery">
-                <a target="_blank" href="images/main/pexels-pixabay-46174.jpg">
-                    <img src="images/main/pexels-pixabay-46174.jpg" alt="Strawberry" width="600" height="400">
-                </a>
-                <div class="name">Strawberry</div>
-                <button class="sc-add-to-cart" data-name="Strawberry" data-price="5" type="submit"> ADD To Cart</button>
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="images/main/pexels-freestocksorg-9886376.jpg">
-                    <img src="images/main/pexels-freestocksorg-9886376.jpg" alt="Pumpkin" width="600" height="400">
-                </a>
-                <div class="name">Pumpkin</div>
-                <button class="sc-add-to-cart" data-name="Pumpkin" data-price="7" type="submit"> ADD To Cart</button>
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="images/grocery/pexels-sarah-chai-7262803.jpg">
-                    <img src="images/grocery/pexels-sarah-chai-7262803.jpg" alt="" width="600" height="400">
-                </a>
-                <div class="name">Lemoon</div>
-                <button class="sc-add-to-cart" data-name="Lemoon" data-price="6" type="submit"> ADD To Cart</button>
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="images/grocery/pexels-public-domain-pictures-42059.jpg">
-                    <img src="images/grocery/pexels-public-domain-pictures-42059.jpg" alt="" width="600" height="400">
-                </a>
-                <div class="name">Orange</div>
-                <button class="sc-add-to-cart" data-name="Orange" data-price="3" type="submit"> ADD To Cart</button>
-            </div>
-            <div class="gallery">
-                <a target="_blank" href="images/grocery/pexels-vanessa-loring-5966630.jpg">
-                    <img src="images/grocery/pexels-vanessa-loring-5966630.jpg" alt="" width="600" height="400">
-                </a>
-                <div class="name">Banana</div>
-                <button class="sc-add-to-cart" data-name="Banana" data-price="2" type="submit"> ADD To Cart</button>
-            </div>
-
-            <div id="cart"></div>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="images/main/pexels-pixabay-46174.jpg" alt="Strawberry" width="300" height="200">
+                  <br>
+                  Strawberry - <strong>$5</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Strawberry" data-summary="summary 1" data-price="5" 
+                          data-quantity="1" data-image="images/main/pexels-pixabay-46174.jpg">Add to Cart</button>
+                  <a href="#" class="btn btn-info">Details</a>
+                </div>
+              
+                <div class="col-md-3 text-center">
+                    <a target="_blank" href="images/main/pexels-freestocksorg-9886376.jpg">
+                        <img src="images/main/pexels-freestocksorg-9886376.jpg" alt="Pumpkin" width="300" height="200">
+                    </a>
+                  <br>
+                  Pumpkin - <strong>$7</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Pumpkin" data-summary="summary 2" data-price="7" 
+                          data-quantity="1" data-image="images/main/pexels-freestocksorg-9886376.jpg"">Add to Cart</button>
+                  <a href="#" class="btn btn-info">Details</a>
+                </div>
+              
+                <div class="col-md-3 text-center">
+                    <a target="_blank" href="images/grocery/pexels-sarah-chai-7262803.jpg">
+                        <img src="images/grocery/pexels-sarah-chai-7262803.jpg" alt="Lemoon" width="300" height="200">
+                    </a>
+                  <br>
+                  Lemoon - <strong>$6</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Lemoon" data-summary="summary 3" data-price="6" 
+                          data-quantity="1" data-image="images/grocery/pexels-sarah-chai-7262803.jpg">Add to Cart</button>
+                  <a href="#" class="btn btn-info">Details</a>
+                </div>
+              
+                <div class="col-md-3 text-center">
+                    <a target="_blank" href="images/grocery/pexels-public-domain-pictures-42059.jpg">
+                        <img src="images/grocery/pexels-public-domain-pictures-42059.jpg" alt="Orange" width="300" height="200">
+                    </a>
+                  <br>
+                  Orange - <strong>$4</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Orange" data-summary="summary 4" data-price="4" 
+                          data-quantity="1" data-image="images/grocery/pexels-public-domain-pictures-42059.jpg">Add to Cart</button>
+                  <a href="#" class="btn btn-info">Details</a>
+                </div>
+              
+                <div class="col-md-3 text-center">
+                    <a target="_blank" href="images/grocery/pexels-vanessa-loring-5966630.jpg">
+                        <img src="images/grocery/pexels-vanessa-loring-5966630.jpg" alt="Banana" width="300" height="200">
+                    </a>
+                  <br>
+                  Banana - <strong>$2</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Banana" data-summary="summary 5" data-price="2" 
+                          data-quantity="1" data-image="images/grocery/pexels-vanessa-loring-5966630.jpg">Add to Cart</button>
+                  <a href="#" class="btn btn-info">Details</a>
+                </div>
+              
+              </div>
         </main>
 
         <footer>
