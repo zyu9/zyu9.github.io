@@ -91,15 +91,4 @@ ul {
  [data-filter] + [data-filter] {
   margin-left: 5px;
 }
-
-[data-tags] {
-  width: 250px;
-  text-align: center;
-  line-height: 100px;
-  display: inline-block;
-  background: #4B5563;
-  color: #fff;
-  margin: 1rem 1rem 1rem 0;
-  border-radius: 5px;
-}
   
