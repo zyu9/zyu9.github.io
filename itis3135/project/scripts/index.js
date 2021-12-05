@@ -1,16 +1,11 @@
-$(document).ready(function() {
-    $("#slider").bxSlider({
-        auto: true,
-        randomStart: true, 
-        captions: true, 
-        pager: true,
-        pagerType: 'short',
-        pagerSelector: "#id_pager",
-        speed: 3000, 
-        minSlides: 1,
-        maxSlides: 1,
-        moveSlides: 1, 
-        slideWidth: 500,
-        slideMargin: 20
-    });
-});
+$('.carousel').flickity({
+    accessibility: true,
+    adaptiveHeight: false,
+    autoPlay: false,
+    cellAlign: 'center',
+    friction: 0.2,
+    lazyLoad: true,
+    initialIndex: 0,
+    percentPosition: true,
+    prevNextButtons: true
+  });

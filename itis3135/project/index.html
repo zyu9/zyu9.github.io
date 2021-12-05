@@ -2,18 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-
-        <link rel="stylesheet" href="plugins/jquery.mycart-master/css/bootstrap.min.css">
-        <script src="plugins/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
-        <script src="plugins/jquery.mycart-master/js/bootstrap.min.js"></script>
-        <script src="plugins/jquery.mycart-master/js/jquery.mycart.js"></script>
+        <link href="plugins/flickity-master/dist/flickity.min.css" rel="stylesheet">
+        <script src="plugins/flickity-master/dist/flickity.pkgd.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="styles/default.css">
-        <script src="scripts/cart.js"></script>
         <script src="scripts/index.js"></script>
         <title>Welcome to Grocery Store</title>
     </head>
@@ -27,7 +19,6 @@
                     <li><a href="seafood.html">Seafood</a></li>
                     <li><a href="electronics.html">Electronics</a></li>
                     <li><a href="furniture.html">Furniture</a></li>
-                    <li><div class="cart"><span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></div></li>
                 </ul>
             </div>
         </nav>
@@ -35,38 +26,19 @@
         <main>
             <h2>Welcome to Grocery Store</h2>
             <p>Let's explore our store!</p>
-            <img id="slide" src="images/main/pexels-daria-shevtsova-709817.jpg" alt="">
-            <ul id="slider">
-                <img src="images/main/pexels-mehrad-vosoughi-3687999.jpg" alt="">
-                <img src="images/main/pexels-pixabay-264636.jpg" alt="">
-                <img src="images/main/pexels-maria-orlova-4916298.jpg" alt="">
-                <img src="images/main/pexels-anna-shvets-3962285.jpg" alt="">
-                <img src="images/main/pexels-artem-beliaikin-2292919.jpg" alt="">
-            </ul>
-            <p id="id_pager"></p>
+    
+            <div class="carousel" data-flickity='{ options here }'>
+                <div class="carousel-cell"><img src="images/main/pexels-mehrad-vosoughi-3687999.jpg" alt="Slide 1"></div>
+                <div class="carousel-cell"><img src="images/main/pexels-pixabay-264636.jpg" alt="Slide 2"></div>
+                <div class="carousel-cell"> <img src="images/main/pexels-maria-orlova-4916298.jpg" alt="Slide 3"></div>
+                <div class="carousel-cell">  <img src="images/main/pexels-anna-shvets-3962285.jpg" alt="Slide 4"></div>
+                <div class="carousel-cell"> <img src="images/main/pexels-artem-beliaikin-2292919.jpg" alt="Slide 5"></div>
+            </div>
+
             <br>
             <br>
             <h2>Featured Product</h2>
             <div class="row">
-                <div class="col-md-3 text-center">
-                    <img src="images/main/featured_strawberry.jpg" alt="Strawberry" width="300" height="200">
-                  <br>
-                  Strawberry - <strong>$5</strong>
-                  <br>
-                  <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Strawberry" data-summary="Strawberry" data-price="5" 
-                          data-quantity="1" data-image="images/main/featured_strawberry">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
-                </div>
-              
-                <div class="col-md-3 text-center">
-                    <img src="images/main/featured_pumpkin.jpg" alt="Pumpkin" width="300" height="200">
-                  <br>
-                  Pumpkin - <strong>$7</strong>
-                  <br>
-                  <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Pumpkin" data-summary="Pumpkin" data-price="7" 
-                          data-quantity="1" data-image="images/main/featured_pumpkin">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
-                </div>
             </div>
         </main>
 
