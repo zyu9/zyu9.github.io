@@ -6,6 +6,10 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/darkly/bootstrap.min.css">
+        <link rel="stylesheet" href="plugins/responsive-bootstrap-carousel-multiple-items/style.css">
+        <script src="plugins/responsive-bootstrap-carousel-multiple-items/carousel.js"></script>
         <script src="scripts/index.js"></script>
         <title>Welcome to Our Store</title>
     </head>
@@ -55,8 +59,48 @@
             <br>
             <br>
             <h3>Featured Product</h3>
-            <div class="row">
-            </div>
+            <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-lg-4 col-md-6">
+                      <img class="img-fluid" src="images/shop/seafood_tempura.jpg">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6">
+                      <img class="img-fluid" src="images/main/featured_strawberry.jpg">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6">
+                      <img class="img-fluid" src="images/main/featured_pumpkin.jpg">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6">
+                      <img class="img-fluid" src="images/shop/seafood-crab.jpg">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6">
+                      <img class="img-fluid" src="images/shop/flower_roseus.jpg">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6">
+                      <img class="img-fluid" src="images/shop/grocery_orange_bell_peppers.jpg">
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev bg-dark w-auto" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next bg-dark w-auto" href="#myCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </main>
 
         <footer>
