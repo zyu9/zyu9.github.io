@@ -20,8 +20,47 @@
         </nav>
 
         <main>
-            <h2>Subscribe</h2>
-            <h2>Inquiry</h2>
+            <h2>Subscribe Form</h2>
+            <div class="subscribe">
+                <form action="#">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <input type="radio" id="supermarket" name="subscribe" value="Supermarket">
+                    <label for="supermarket">Supermarket</label><br>
+                    <input type="radio" id="restaurant" name="subscribe" value="Restaurant">
+                    <label for="restaurant">Restaurant</label><br>
+                    <input type="radio" id="all" name="subscribe" value="All"><br><br>
+                    <label for="all">All</label>
+
+                    <input type="button" value="Subscribe">
+                </form>
+            </div>
+            <br>
+            <br>
+            <h2>Inquiry Form</h2>
+            <div class="inquiry">
+                <form action="#">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="inquiry">Inquiry:</label> <br>
+                    <textarea id="inquiry" name="inquiry" rows="4" cols="50" required></textarea><br><br>
+
+                    <label for="review">Review:</label> <br>
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </main>
 
         <footer>
