@@ -72,6 +72,11 @@ ul {
     height: auto;
   }
 
+  div.carousel img {
+    width: 100%;
+    height: auto;
+  }
+
   div.cart{
     float: right; 
     cursor: pointer;
