@@ -1,1 +1,1 @@
-$('#slideshow').slideshow();
+$('#slideshow-2').slideshow();
