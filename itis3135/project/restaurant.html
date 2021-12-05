@@ -2,7 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="plugins/jquery.mycart-master/css/bootstrap.min.css">
+        <script src="plugins/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
+        <script src="plugins/jquery.mycart-master/js/bootstrap.min.js"></script>
+        <script src="plugins/jquery.mycart-master/js/jquery.mycart.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/default.css">
+        <script src="scripts/cart.js"></script>
         <title>Restaurant</title>
     </head>
 
@@ -15,6 +20,7 @@
                     <li><a class="active" href="restaurant.html">Restaurant</a></li>
                     <li><a href="subscribe_and_inquiry.html">Subscribe & Inquiry</a></li>
                     <li><a href="questions.html">FAQs</a></li>
+                    <li><div class="cart"><span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></div></li>
                 </ul>
             </div>
         </nav>
@@ -23,6 +29,70 @@
             <h2>Restaurant Menu</h2>
             <h3 class="notice">Supermarket and Restaurant are paid separately!</h3>
             <p>If have questions, please check the FAQs!</p>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="images/restaurant/restaurant_rice.jpg" alt="Rice" width="300" height="200">
+                  <br>
+                  Rice - <strong>$1</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Rice" data-summary="Rice" data-price="1" 
+                          data-quantity="1" data-image="images/restaurant/restaurant_rice.jpg">Add to Cart</button>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="images/restaurant/restaurant_ramen.jpg" alt="Ramen" width="300" height="200">
+                  <br>
+                  Ramen - <strong>$10</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Ramen" data-summary="Ramen" data-price="10" 
+                          data-quantity="1" data-image="images/restaurant/restaurant_ramen.jpg">Add to Cart</button>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="images/restaurant/restaurant_fried_noodle.jpg" alt="Fried Noodle" width="300" height="200">
+                  <br>
+                  Fried Noodle - <strong>$7</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Fried Noodle" data-summary="Fried Noodle" data-price="7" 
+                          data-quantity="1" data-image="images/restaurant/restaurant_fried_noodle.jpg">Add to Cart</button>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="images/restaurant/restaurant_pizza.jpg" alt="Pizza" width="300" height="200">
+                  <br>
+                  Pizza - <strong>$8</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Pizza" data-summary="Pizza" data-price="8" 
+                          data-quantity="1" data-image="images/restaurant/restaurant_pizza.jpg">Add to Cart</button>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="images/restaurant/restaurant_mooncake.jpg" alt="Mooncake" width="300" height="200">
+                  <br>
+                  Mooncake - <strong>$5</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Mooncake" data-summary="Mooncake" data-price="5" 
+                          data-quantity="1" data-image="images/restaurant/restaurant_mooncake.jpg">Add to Cart</button>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="images/restaurant/restaurant_birthday_cake.jpg" alt="Birthday Cake" width="300" height="200">
+                  <br>
+                  Birthday Cake - <strong>$24</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Birthday Cake" data-summary="Birthday Cake" data-price="24" 
+                          data-quantity="1" data-image="images/restaurant/restaurant_birthday_cake.jpg">Add to Cart</button>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <img src="images/restaurant/restaurant_cake_tart_pastries.jpg" alt="Cake Tart Pastries" width="300" height="200">
+                  <br>
+                  Cake Tart Pastries - <strong>$6</strong>
+                  <br>
+                  <button class="btn btn-danger my-cart-btn" data-id="7" data-name="Cake Tart Pastries" data-summary="Cake Tart Pastries" data-price="6" 
+                          data-quantity="1" data-image="images/restaurant/restaurant_cake_tart_pastries.jpg">Add to Cart</button>
+                </div>
+            </div>
         </main>
 
         <footer>
