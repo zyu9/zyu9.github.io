@@ -62,6 +62,11 @@ ul {
     height: auto;
   }
 
+  div.slide img {
+    width: 100%;
+    height: auto;
+  }
+
   div.cart{
     float: right; 
     cursor: pointer;
