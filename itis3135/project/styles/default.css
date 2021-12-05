@@ -91,4 +91,8 @@ ul {
  [data-filter] + [data-filter] {
   margin-left: 5px;
 }
+
+.notice{
+  color:red;
+}
   
