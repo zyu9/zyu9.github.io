@@ -1,4 +1,4 @@
-$('.carousel').flickity({
+$('carousel').flickity({
     accessibility: true,
     adaptiveHeight: false,
     autoPlay: false,
