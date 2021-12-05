@@ -6,10 +6,11 @@
         <script src="plugins/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
         <script src="plugins/jquery.mycart-master/js/bootstrap.min.js"></script>
         <script src="plugins/jquery.mycart-master/js/jquery.mycart.js"></script>
-
+        <script src="plugins/filter-tags-input/autofilter.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/default.css">
+        <script src="scripts/filter.js"></script>
         <script src="scripts/cart.js"></script>
-        <title>Grocery</title>
+        <title>Shopping Center - Looking for Grocery and More!</title>
     </head>
 
     <body>
@@ -17,7 +18,7 @@
             <div class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="shopping.html">shopping</a></li>
+                    <li><a class="active" href="shopping.html">Shopping</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="subscribe.html">Subscription</a></li>
                     <li><a href="furniture.html">Furniture</a></li>
@@ -27,109 +28,118 @@
         </nav>
 
         <main>
-            <h2>Shooping for Grocery!</h2>
+            <h2>Shooping for Grocery and More!</h2>
+            <h3>Filter By Tags</h3>
+            <!-- Filter Controls -->
+            <span data-filter>All</span>
+            <span data-filter="grocery">Grocery</span>
+            <span data-filter="fruits">Fruits</span>
+            <span data-filter="vegetables">Vegetables</span>
+            <span data-filter="seafood">Seafood</span>
+            <span data-filter="flower">Flower</span>
+
+            <!-- Search Field -->
+            <input type="text" placeholder="Search..." data-filter />
+            <!-- Filterable Items -->
+            <div data-to-filter>Grocery</div>
+            <div data-to-filter>Fruits</div>
+            <div data-to-filter>Vegetables</div>
+            <div data-to-filter>Seafood</div>
+            <div data-to-filter>Flower</div>
+
+            <!-- Filterable Items -->
             <div class="row">
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-tags="grocery,fruits">
                     <img src="images/main/featured_strawberry.jpg" alt="Strawberry" width="300" height="200">
                   <br>
                   Strawberry - <strong>$5</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Strawberry" data-summary="Strawberry" data-price="5" 
                           data-quantity="1" data-image="images/main/featured_strawberry">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                 </div>
               
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-tags="grocery,vegetables">
                     <img src="images/main/featured_pumpkin.jpg" alt="Pumpkin" width="300" height="200">
                   <br>
                   Pumpkin - <strong>$7</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Pumpkin" data-summary="Pumpkin" data-price="7" 
                           data-quantity="1" data-image="images/main/featured_pumpkin">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                 </div>
               
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-tags="grocery,fruits">
                     <img src="images/shop/grocery_lemon.jpg" alt="Lemon" width="300" height="200">
                   <br>
                   Lemon - <strong>$6</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Lemon" data-summary="Lemon" data-price="6" 
                           data-quantity="1" data-image="images/shop/grocery_lemon">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                 </div>
               
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-tags="grocery,fruits">
                     <img src="images/shop/grocery_orange.jpg" alt="Orange" width="300" height="200">
                   <br>
                   Orange - <strong>$4</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Orange" data-summary="Orange" data-price="4" 
                           data-quantity="1" data-image="images/shop/grocery_orange">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                 </div>
               
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" data-tags="grocery,fruits">
                     <img src="images/shop/grocery_banana.jpg" alt="Banana" width="300" height="200">
                   <br>
                   Banana - <strong>$2</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Banana" data-summary="Banana" data-price="2" 
                           data-quantity="1" data-image="images/shop/grocery_banana">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                 </div>
               
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="seafood">
                     <img src="images/shop/seafood-crab.jpg" alt="Crab" width="300" height="200">
                   <br>
                   Crab - <strong>$20</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Crab" data-summary="Crab" data-price="20" 
                           data-quantity="1" data-image="images/shop/seafood-crab.jpg">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="seafood">
                     <img src="images/shop/seafood_clam.jpg" alt="Clam" width="300" height="200">
                   <br>
                   Clam - <strong>$12</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="7" data-name="Clam" data-summary="Clam" data-price="12" 
                           data-quantity="1" data-image="images/shop/seafood_clam.jpg">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="seafood">
                     <img src="images/shop/seafood_fish.jpg" alt="Fish" width="300" height="200">
                   <br>
                   Fish - <strong>$8</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="8" data-name="Fish" data-summary="Fish" data-price="8" 
                           data-quantity="1" data-image="images/shop/seafood_fish.jpg">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="seafood">
                     <img src="images/shop/seafood_shrimp.jpg" alt="Shrimp" width="300" height="200">
                   <br>
                   Shrimp - <strong>$13</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="9" data-name="Shrimp" data-summary="Shrimp" data-price="13" 
                           data-quantity="1" data-image="images/shop/seafood_shrimp.jpg">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="seafood">
                     <img src="images/shop/seafood_tempura.jpg" alt="Tempura" width="300" height="200">
                   <br>
                   Tempura - <strong>$15</strong>
                   <br>
                   <button class="btn btn-danger my-cart-btn" data-id="10" data-name="Tempura" data-summary="Tempura" data-price="15" 
                           data-quantity="1" data-image="images/shop/seafood_tempura.jpg">Add to Cart</button>
-                  <a href="#" class="btn btn-info">Details</a>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="grocery, vegetables">
                     <img src="images/shop/grocery_green_pepper.jpg" alt="Green Pepper" width="300" height="200">
                   <br>
                   Green Pepper - <strong>$3.5</strong>
@@ -138,7 +148,7 @@
                           data-quantity="1" data-image="images/shop/grocery_green_pepper.jpg">Add to Cart</button>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="grocery, vegetables">
                     <img src="images/shop/grocery_orange_bell_peppers.jpg" alt="Orange Bell Pepper" width="300" height="200">
                   <br>
                   Orange Bell Pepper - <strong>$5.5</strong>
@@ -147,7 +157,7 @@
                           data-quantity="1" data-image="images/shop/grocery_orange_bell_peppers.jpg">Add to Cart</button>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="grocery, vegetables">
                     <img src="images/shop/grocery_red_pepper.jpg" alt="Red Pepper" width="300" height="200">
                   <br>
                   Red Pepper - <strong>$1.5</strong>
@@ -156,7 +166,7 @@
                           data-quantity="1" data-image="images/shop/grocery_red_pepper.jpg">Add to Cart</button>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="grocery, vegetables">
                     <img src="images/shop/grocery_purple_onion.jpg" alt="Purple Onion" width="300" height="200">
                   <br>
                   Purple Onion - <strong>$3.5</strong>
@@ -165,7 +175,7 @@
                           data-quantity="1" data-image="images/shop/grocery_purple_onion.jpg">Add to Cart</button>
                   </div>
 
-                  <div class="col-md-3 text-center">
+                  <div class="col-md-3 text-center" data-tags="grocery, vegetables">
                     <img src="images/shop/grocery_white_onion.jpg" alt="White Onion" width="300" height="200">
                   <br>
                   White Onion - <strong>$2.5</strong>

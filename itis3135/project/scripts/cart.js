@@ -1,5 +1,4 @@
 $(function () {
-
     var goToCartIcon = function($addTocartBtn){
       var $cartIcon = $(".my-cart-icon");
       var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
@@ -48,5 +47,5 @@ $(function () {
           return totalPrice * 0.5;
         }
       });
-  
   });
+
