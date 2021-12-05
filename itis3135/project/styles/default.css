@@ -78,7 +78,14 @@ ul {
     z-index: 999;
   }
 
-  img {
-    width: 50%;
-    height: auto;
-  }
+ .filter-tags{
+  display: inline-block;
+  background: #0491aa;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+ }
+
+  
