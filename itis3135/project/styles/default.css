@@ -41,11 +41,6 @@ ul {
     background-color: #29b6f7;
   }
 
-  img {
-    width: 50%;
-    height: auto;
-  }
-
   div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
@@ -81,4 +76,9 @@ ul {
   .my-cart-icon-affix {
     position: fixed;
     z-index: 999;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
   }
