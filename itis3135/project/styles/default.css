@@ -46,16 +46,6 @@ ul {
     height: auto;
   }
 
-  .bx-wrapper {
-    margin-bottom: 20px;
-  }
-
-  #id_pager {
-    text-align: center;
-    font-size: 90%;
-    color: green;
-  }
-
   div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
@@ -68,11 +58,6 @@ ul {
   }
   
   div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-
-  div.carousel img {
     width: 100%;
     height: auto;
   }

@@ -1,0 +1,61 @@
+/* slideshow demo #2 */
+
+#slideshow-2 {
+	position: relative;
+}
+
+#slideshow-2 .slides {
+	z-index: 109;
+}
+
+#slideshow-2 .slides .slide img {
+	width: 100%;
+}
+
+#slideshow-2 .controls {
+	position: absolute;
+	z-index: 101;
+	left: 30px;
+	bottom: 30px;
+	width: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	display: block;
+}
+
+#slideshow-2 .controls .control {
+	background-color: #ffffff;
+	padding: 5px 10px;
+	margin: 0 5px;
+	text-decoration: none;
+	color: #000000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	display: inline-block;
+	float: left;
+}
+
+/* mobile */
+
+@media (max-width:979px) {
+	.slides {
+		width: 100%;
+	}
+
+	.slides .slide {
+		width: 100%;
+	}
+
+	.slides .slide img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width:790px) {}
+
+@media (max-width:500px) {}
