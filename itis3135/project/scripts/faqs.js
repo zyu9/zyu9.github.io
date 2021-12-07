@@ -1,13 +1,8 @@
 //<!-- jQuery call to the accordion() method. -->
 $(document).ready(function() {
-    $("#accordion").accordion({
-        event: "click",
-        heightStyle: "content",
-        collapsible: true
-    });
-
-
     var url = "faqs.json"; 
+    alert("url" + url); 
+    
     $.getJSON(url, function(data) { 
         var html = ""; 
         $.each(data.items, function(i, item){ 
@@ -16,5 +11,10 @@ $(document).ready(function() {
         $("#accordion").html(html); 
     }); 
 
-    $("#accordion").accordion( "resize" );  
+    //$("#accordion").accordion( "resize" );  
+    $("#accordion").accordion({
+        event: "click",
+        heightStyle: "content",
+        collapsible: true
+    });
 });
