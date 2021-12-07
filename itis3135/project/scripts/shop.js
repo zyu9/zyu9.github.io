@@ -16,7 +16,7 @@ $(document).ready(function() {
                 $.each(this, function(key, value) { 
                     $("#flowers").append( 
                         "<div class=" + "col-md-3 text-center" + "data-tages=" + "flowers" + ">" +
-                        "<img src= "+ value.image + "alt=" + value.name + "width=" + "300" + "height="+ 200 + ">" +  
+                        "<img src= "+ value.image + "alt=" + value.name + "width=" + "300" + "height="+ "200" + ">" +  
                         "<br>" + value.name + " - " + "<strong>" + "$" +
                         value.price + "<strong>" + "<br>" + 
                         "<button class=" + "btn btn-danger my-cart-btn" + "data-id=" + value.id + "data-name=" + value.name + 
