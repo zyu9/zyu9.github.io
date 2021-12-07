@@ -5,7 +5,7 @@ $(document).ready(function() {
         heightStyle: "content",
         collapsible: true
     });
-    
+
     $.ajax({
         type: "get",
         url: "faqs.json",
@@ -29,4 +29,6 @@ $(document).ready(function() {
             });  
         }
     });
+
+    $("#accordion").accordion( "resize" );  
 });
