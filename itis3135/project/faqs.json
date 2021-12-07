@@ -12,11 +12,11 @@
 		"answer": "Currently you will get a 50% discounts on all of our items. Enjoy shopping!"
 	},
 	{
-		"question":"Does supermarket and restaurant pay together?",
-		"answer": "No. You have to pay separately."
+		"question":"How long is the shipping time? And how much does it cost?",
+		"answer": "Answer varies based on different area. Generally, it takes no longer than three days and no more than $10. Free shipping for over $50."
 	},
 	{
-		"question":"Does supermarket and restaurant pay together?",
-		"answer": "No. You have to pay separately."
+		"question":"How do I add multiple items to the cart?",
+		"answer": "You can click on 'add to cart' multiple times. Or you can click the cart and edit the amount there."
 	}
 ]}

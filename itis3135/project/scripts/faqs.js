@@ -6,29 +6,15 @@ $(document).ready(function() {
         collapsible: true
     });
 
-    $.ajax({
-        type: "get",
-        url: "faqs.json",
-        beforeSend: function() {
-            $("#accordion").html("Loading...");
-        },
-        timeout: 10000,
-        error: function(json, status, error) {
-            alert("Error: " + json.status + " - " + error);
-        },
-        dataType: "json",
-        success: function(data) {
-            $("#accordion").html("");
-            $.each(data, function() { 
-                $.each(this, function(key, value) { 
-                    $("#accordion").append( 
-                        "<h3>" + value.question + "</h3>" +
-                        "<p>" + value.answer + "</p>"
-                    ); 
-                }); 
-            });  
-        }
-    });
+
+    var url = "faqs.json"; 
+    $.getJSON(url, function(data) { 
+        var html = ""; 
+        $.each(data.items, function(i, item){ 
+            html += "<h3>" + value.question + "</h3>" + "<div>"+ "<p>" + value.answer + "</p>" + "</div>";
+        }); 
+        $("#accordion").html(html); 
+    }); 
 
     $("#accordion").accordion( "resize" );  
 });
