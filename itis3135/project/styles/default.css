@@ -41,21 +41,6 @@ ul {
     background-color: #29b6f7;
   }
 
-  div.gallery {
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-
   div.slide img {
     width: 100%;
     height: auto;
