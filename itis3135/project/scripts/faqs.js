@@ -4,7 +4,7 @@ $(document).ready(function() {
         type: "get",
         url: "faqs.json",
         beforeSend: function() {
-            $("#text").html("Loading...");
+            $("#accordion").html("Loading...");
         },
         timeout: 10000,
         error: function(json, status, error) {
@@ -12,10 +12,10 @@ $(document).ready(function() {
         },
         dataType: "json",
         success: function(data) {
-            $("#text").html("");
+            $("#accordion").html("");
             $.each(data, function() { 
                 $.each(this, function(key, value) { 
-                    $("#text").append( 
+                    $("#accordion").append( 
                         "<h3>" + value.question + "</h3>" +
                         "<p>" + value.answer + "</p>"
                     ); 
