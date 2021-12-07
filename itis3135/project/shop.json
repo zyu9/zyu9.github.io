@@ -1,0 +1,32 @@
+{"flowers":[
+	{
+		"id": 16,
+		"name":"Lily",
+		"image":"images/shop/flower_lily.jpg",
+		"price":4.99
+	},
+	{
+		"id": 17,
+		"name":"Orange Marigold",
+		"image":"images/shop/flower_orange_marigold.jpg",
+		"price":5.55
+	},
+	{
+		"id": 18,
+		"name":"Orange Tulip",
+		"image":"images/shop/flower_orange_tulip.jpg",
+		"price": 6.99
+	},
+	{
+		"id": 19,
+		"name":"Rose",
+		"image":"images/shop/flower_rose.jpg",
+		"price":7.35
+	},
+	{
+		"id": 20,
+		"name":"Roseus",
+		"image":"images/shop/flower_roseus.jpg",
+		"price":7.55
+	}
+]}
