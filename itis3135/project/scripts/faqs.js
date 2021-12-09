@@ -5,7 +5,7 @@ $(document).ready(function() {
         $.each(data, function() { 
             $.each(this, function(key, value) {  
                 $("#accordion").append( 
-                    "<h3>" + item.question + "</h3>" + "<div>"+ "<p>" + item.answer + "</p>" + "</div>"
+                    "<h3>" + value.question + "</h3>" + "<div>"+ "<p>" + value.answer + "</p>" + "</div>"
                 ); 
             }); 
         });  
