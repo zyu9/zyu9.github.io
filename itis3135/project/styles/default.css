@@ -1,7 +1,7 @@
 body
 {
 	font-family:  cursive, Cambria, 'Malgun Gothic', math, Candara;
-	color: #a7a7a7;
+	color: #EFEBEB;
 	background-color: #633000;
 	margin-left: 75px;
 	margin-right: 75px;
@@ -63,7 +63,6 @@ ul {
   }
 
  .filter-tags{
-  margin: 1rem;
   display: inline-block;
   background: #0491aa;
   color: white;
@@ -78,6 +77,6 @@ ul {
 }
 
 .notice{
-  color:red;
+  color: #FFC2C2;
 }
   
