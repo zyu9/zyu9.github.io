@@ -2,18 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- Insert the mycart master plugin -->
         <link rel="stylesheet" href="plugins/jquery.mycart-master/css/bootstrap.min.css">
         <script src="plugins/jquery.mycart-master/js/jquery-2.2.3.min.js"></script>
         <script src="plugins/jquery.mycart-master/js/bootstrap.min.js"></script>
         <script src="plugins/jquery.mycart-master/js/jquery.mycart.js"></script>
+        <!-- Insert the autofilter plugin -->
         <script src="plugins/filter-tags-input/autofilter.js"></script>
+        <!-- Insert my default css -->
         <link rel="stylesheet" type="text/css" href="styles/default.css">
+        <!-- Insert the filter.js (uses with the autofilter plugin) cart.js (uses with the mycart plugin) -->
         <script src="scripts/filter.js"></script>
         <script src="scripts/cart.js"></script>
         <title>YMarket Shopping Center - Looking for Grocery and More!</title>
     </head>
 
     <body>
+        <!-- Navigation Bar with current page highlighted -->
         <nav>
             <div class="navigation">
                 <ul>
@@ -42,7 +47,7 @@
             <span data-filter="flowers">Flowers</span>
             </div>
             <br>
-            <!-- Filterable Items -->
+            <!-- Display the products with tags for filter -->
             <div class="row">
                 <div class="col-md-3 text-center" data-tags="grocery,fruits">
                     <img src="images/main/featured_strawberry.jpg" alt="Strawberry" width="300" height="200">
