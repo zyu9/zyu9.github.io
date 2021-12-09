@@ -63,6 +63,7 @@ ul {
   }
 
  .filter-tags{
+  margin: 1rem;
   display: inline-block;
   background: #0491aa;
   color: white;
