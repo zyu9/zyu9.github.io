@@ -1,34 +1,34 @@
 {"products":[
 	{
-		"name":"Pumpkin",
-		"image":"images/main/featured_pumpkin.jpg"
+		"name": "Pumpkin",
+		"image": "images/main/featured_pumpkin.jpg"
 	},
 	{
-		"name":"Strawberry",
-		"image":"images/main/featured_strawberry.jpg"
+		"name": "Strawberry",
+		"image": "images/main/featured_strawberry.jpg"
 	},
 	{
-		"name":"Crab",
-		"image":"images/shop/seafood-crab.jpg"
+		"name": "Crab",
+		"image": "images/shop/seafood-crab.jpg"
 	},
 	{
 		"name":"Lily",
 		"image":"images/shop/flower_lily.jpg"
 	},
 	{
-		"name":"Tempura",
-		"image":"images/shop/seafood_tempura.jpg"
+		"name": "Tempura",
+		"image": "images/shop/seafood_tempura.jpg"
 	},
 	{
-		"name":"Orange Bell Peppers",
-		"image":"images/shop/grocery_orange_bell_peppers.jpg"
+		"name": "Orange Bell Peppers",
+		"image": "images/shop/grocery_orange_bell_peppers.jpg"
 	},
 	{
-		"name":"Lemon",
-		"image":"images/shop/grocery_lemon.jpg"
+		"name": "Lemon",
+		"image": "images/shop/grocery_lemon.jpg"
 	},
 	{
-		"name":"Rose",
-		"image":"images/shop/flower_rose.jpg"
+		"name": "Rose",
+		"image": "images/shop/flower_rose.jpg"
 	}
 ]}
