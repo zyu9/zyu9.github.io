@@ -9,11 +9,4 @@ $(document).ready(function() {
         }); 
         $("#accordion").html(html); 
     }); 
-
-    //$("#accordion").accordion( "resize" );  
-    $("#accordion").accordion({
-        event: "click",
-        heightStyle: "content",
-        collapsible: true
-    });
 });
