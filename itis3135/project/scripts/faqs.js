@@ -8,5 +8,11 @@ $(document).ready(function() {
             html += "<h3>" + item.question + "</h3>" + "<div>"+ "<p>" + item.answer + "</p>" + "</div>";
         }); 
         $("#accordion").html(html); 
+
+        $("#accordion").accordion({
+            event: "click",
+            heightStyle: "content",
+            collapsible: true
+        });
     }); 
 });
