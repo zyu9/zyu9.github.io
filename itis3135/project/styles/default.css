@@ -79,4 +79,9 @@ ul {
 .notice{
   color: #FFC2C2;
 }
+
+.submitBtn{
+  background-color: #111;
+  color: white;
+}
   
