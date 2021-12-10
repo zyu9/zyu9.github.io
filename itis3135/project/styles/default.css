@@ -1,7 +1,7 @@
 body
 {
 	font-family:  cursive, Cambria, 'Malgun Gothic', math, Candara;
-	color: #EFEBEB;
+	color: #FFC2C2;
 	background-color: #633000;
 	margin-left: 75px;
 	margin-right: 75px;
@@ -9,60 +9,71 @@ body
 
 header, footer
 {
-    color: #FFFBD6;
+  color: #FFFBD6;
 	text-align: center;
 }
 
-ul {
+ul 
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
+}
   
-  li {
-    float: left;
-  }
+li 
+{
+  float: left;
+}
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
   
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
+li a:hover:not(.active) 
+{
+  background-color: #111;
+}
   
-  .active {
-    background-color: #29b6f7;
-  }
+.active 
+{
+  background-color: #29b6f7;
+}
 
-  div.slide img {
-    width: 100%;
-    height: auto;
-  }
+div.slide img 
+{
+  width: 100%;
+  height: auto;
+}
 
-  div.cart{
-    float: right; 
-    cursor: pointer;
-  }
+div.cart
+{
+  float: right; 
+  cursor: pointer;
+}
 
-  .badge-notify{
-    background:red;
-    position:relative;
-    top: 10px;
-    right: 10px;
-  }
-  .my-cart-icon-affix {
-    position: fixed;
-    z-index: 999;
-  }
+.badge-notify
+{
+  background:red;
+  position:relative;
+  top: 10px;
+  right: 10px;
+}
 
- .filter-tags{
+.my-cart-icon-affix 
+{
+  position: fixed;
+  z-index: 999;
+}
+
+.filter-tags
+{
   display: inline-block;
   background: #0491aa;
   color: white;
@@ -72,15 +83,18 @@ ul {
   margin-bottom: 1rem;
  }
 
- [data-filter] + [data-filter] {
+[data-filter] + [data-filter] 
+{
   margin-left: 5px;
 }
 
-.notice{
-  color: #FFC2C2;
+.notice
+{
+  color: #EFEBEB;
 }
 
-.submitBtn{
+.submitBtn
+{
   background-color: #111;
   color: white;
 }
