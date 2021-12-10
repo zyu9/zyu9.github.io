@@ -1,3 +1,6 @@
+//filter plugin
+//from https://www.jqueryscript.net/other/filter-tags-input.html
+
 $(function($) {
     $.autofilter({
         // filter string as substring

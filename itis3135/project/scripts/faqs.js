@@ -1,6 +1,5 @@
-//<!-- jQuery call to the accordion() method. -->
 $(document).ready(function() {
-
+    //getJSON funtion, based on activity 16
     $.getJSON("faqs.json", function(data){ 
         $.each(data, function() { 
             $.each(this, function(key, value) {  
@@ -10,6 +9,7 @@ $(document).ready(function() {
             }); 
         });  
         
+        //jQuery call to the accordion, based on activity 11
         $("#accordion").accordion({
             event: "click",
             heightStyle: "content",

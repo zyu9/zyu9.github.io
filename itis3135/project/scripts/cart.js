@@ -1,3 +1,6 @@
+//myCart master plugin 
+//from https://www.jqueryscript.net/other/Simple-Shopping-Cart-Plugin-With-jQuery-Bootstrap-mycart.html
+
 $(function () {
     var goToCartIcon = function($addTocartBtn){
       var $cartIcon = $(".my-cart-icon");

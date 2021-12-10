@@ -1,3 +1,4 @@
+//bxSlider from activity12
 $(document).ready(function() {
     $("#slider").bxSlider({
         auto: true,

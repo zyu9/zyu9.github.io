@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    //getJSON funtion, based on activity16
     $.getJSON("featured.json", function(data){ 
         $.each(data, function() { 
             $.each(this, function(key, value) {  
